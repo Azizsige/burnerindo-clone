@@ -16,10 +16,10 @@
     ></script>
     <title>Document</title>
   </head>
-  <body>
-    <nav class="bg-white px-2 py-2.5 sm:px-4 md:bg-[#cc0000]">
+  <body class="overflow-x-hidden">
+    <nav class="bg-white px-2 py-2.5 sm:px-">
       <div
-        class="container mx-auto flex flex-wrap items-center justify-between"
+        class="container mx-auto flex flex-wrap items-center justify-between relative z-10"
       >
         <a href="#" class="flex items-center">
           <img
@@ -69,7 +69,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-1/2"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-[23rem]"
               placeholder="Cari..."
             />
           </div>
@@ -165,7 +165,10 @@
     </nav>
 
     <main>
-      <section class="hero h-[13rem] lg:h-[50rem] flex justify-center items-center mt-20">
+      <section class="hero h-[13rem] lg:h-[50rem] flex justify-center items-center mt-20 lg:mt-0">
+
+        <img class="absolute h-[18rem] lg:z-0 -z-[1] left-[5rem] top-[2rem] lg:-top-[48rem] lg:left-[37rem] lg:h-[86rem]" src="./dist/assets/bg-navbar.png" alt="" srcset="">
+
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -191,8 +194,8 @@
             </div>
           </div>
 
-          <div class="whats-now bg-primary text-white font-bold flex justify-center items-center w-[7rem] h-[4rem] rounded-t-full relative left-[6rem] -top-[1rem] z-[1]">
-            <h1 class="text-xs">What's Now</h1>
+          <div class="whats-now bg-primary text-white font-bold flex justify-center items-center w-[7rem] h-[4rem] rounded-t-full relative left-[6rem] -top-[1rem] z-[1] lg:w-[19rem] lg:h-[9rem] lg:left-[30rem] lg:-top-[3rem]">
+            <h1 class="text-xs lg:text-[26px]">What's Now</h1>
           </div>
 
           <div class="swiper-pagination"></div>
