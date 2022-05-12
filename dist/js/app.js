@@ -20,18 +20,19 @@ const options = {
 
 const collapse = new Collapse(targetEl, options);
 
-// collapse.expand();
-
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 100,
-  centeredSlides: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  effect: "cards",
+  grabCursor: true,
+  cardsEffect: {
+    slideShadows: true,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
+

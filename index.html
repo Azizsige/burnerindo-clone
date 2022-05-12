@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- <link rel="stylesheet" href="./dist/css/carousel.css"> -->
     <script
       src="https://kit.fontawesome.com/3c72b6bd6b.js"
       crossorigin="anonymous"
@@ -68,7 +69,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[20rem] md:w-1/2 rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-1/2"
               placeholder="Cari..."
             />
           </div>
@@ -129,7 +130,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-full  rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm"
+              class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm"
               placeholder="Search..."
             />
           </div>
@@ -139,7 +140,7 @@
             <li>
               <a
                 href="#"
-                class="block rounded py-2 pr-4 pl-3 text-gray-700 md:text-white md:p-0"
+                class="block rounded py-2 pr-4 pl-3 text-gray-700 md:p-0 md:text-white"
                 aria-current="page"
                 >Masuk/Daftar</a
               >
@@ -162,17 +163,57 @@
         </div>
       </div>
     </nav>
-    <!-- <div class="swiper mySwiper bg-red-500">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-      </div> 
-      <div class="swiper-pagination"></div>
-    </div> -->
+
+    <main>
+      <section class="hero h-[13rem] lg:h-[50rem] flex justify-center items-center mt-20">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider1.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider2.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider3.jpg" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider4.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider5.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider6.png" alt="" srcset="">
+            </div>
+            <div class="swiper-slide">
+              <img class="w-full h-auto" src="./dist/assets/slider7.png" alt="" srcset="">
+            </div>
+          </div>
+
+          <div class="whats-now bg-primary text-white font-bold flex justify-center items-center w-[7rem] h-[4rem] rounded-t-full relative left-[6rem] -top-[1rem] z-[1]">
+            <h1 class="text-xs">What's Now</h1>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- <div class="gallery">
+          <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src="./dist/assets/slider1.png" data-index="1">
+            <img class="gallery-item gallery-item-2" src="./dist/assets/slider2.png" data-index="2">
+            <img class="gallery-item gallery-item-3" src="./dist/assets/slider3.jpg" data-index="3">
+            <img class="gallery-item gallery-item-4" src="./dist/assets/slider4.png" data-index="4">
+            <img class="gallery-item gallery-item-5" src="./dist/assets/slider5.png" data-index="5">
+          </div>
+          
+          <div class="gallery-controls"></div>
+        </div> -->
+      </section>
+    </main>
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./dist/js/app.js">
-    </script>
+    <!-- <script src="./dist/js/carousel.js"></script> -->
+    <script src="./dist/js/app.js"></script>
   </body>
 </html>
