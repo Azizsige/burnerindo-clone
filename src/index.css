@@ -23,6 +23,10 @@
     bottom: -1rem !important;
   }
 
+  .swiper-wrapper {
+    width: 0 !important;
+  }
+
   .gallery-item-1,
   .gallery-item-2,
   .gallery-item-3,
@@ -37,10 +41,13 @@
     margin: 7rem 0 30px 0 !important;
   }
 
-  /* .hero {
-    object-position: center;
-    background: url('./../assets/bg-navbar.png') no-repeat;
-  } */
+  .fas::before {
+    font-size: 24px !important;
+  }
+
+  .fas.fas-xs::before {
+    font-size: 13px !important;
+  }
 
   @media (min-width: 768px) {
     .swiper {
