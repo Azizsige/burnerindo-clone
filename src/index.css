@@ -20,6 +20,7 @@
   }
 
   .swiper-pagination{
+    left: 0 !important;
     bottom: -1rem !important;
   }
 
@@ -47,6 +48,13 @@
 
   .fas.fas-xs::before {
     font-size: 13px !important;
+  }
+
+  @media (min-width: 640px) { 
+    .swiper-pagination{
+      left: -1rem !important;
+      bottom: -1rem !important;
+    }
   }
 
   @media (min-width: 768px) {
