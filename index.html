@@ -17,9 +17,9 @@
     <title>Document</title>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="bg-white px-2 py-2.5 sm:px-">
+    <nav class="sm:px- bg-white px-2 py-2.5 md:px-6">
       <div
-        class="container mx-auto flex flex-wrap items-center justify-between relative z-10"
+        class="container relative z-10 mx-auto flex flex-wrap items-center justify-between"
       >
         <a href="#" class="flex items-center">
           <img
@@ -69,7 +69,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-[23rem]"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[23rem]"
               placeholder="Cari..."
             />
           </div>
@@ -148,14 +148,14 @@
             <li>
               <a
                 href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
                 >About Us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
                 >Cart <i class="fas fa-shopping-cart"></i
               ></a>
             </li>
@@ -165,54 +165,286 @@
     </nav>
 
     <main>
-      <section class="hero h-[13rem] lg:h-[50rem] flex justify-center items-center mt-20 lg:mt-0">
+      <section
+        class="hero mt-20 flex h-[13rem] items-center justify-center lg:-mt-32 lg:h-[50rem]"
+      >
+        <img
+          class="absolute left-[5rem] top-[2rem] -z-[1] h-[18rem] md:h-[23rem] md:left-[16.5rem] md:top-0 md:z-0 sm:top-[4rem] sm:left-[18rem] sm:h-[22rem] lg:top-0 lg:left-[14.5rem] lg:z-0 lg:h-[28rem]"
+          src="./dist/assets/bg-navbar2.png"
+          alt=""
+          srcset=""
+        />
 
-        <img class="absolute h-[18rem] lg:z-0 -z-[1] left-[5rem] top-[2rem] lg:-top-[48rem] lg:left-[37rem] lg:h-[86rem]" src="./dist/assets/bg-navbar.png" alt="" srcset="">
+        <!-- <div class="bg h-[40rem] w-[40rem] rounded-full bg-primary absolute z-0"></div> -->
 
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider1.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider1.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider2.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider2.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider3.jpg" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider3.jpg"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider4.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider4.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider5.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider5.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider6.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider6.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="swiper-slide">
-              <img class="w-full h-auto" src="./dist/assets/slider7.png" alt="" srcset="">
+              <img
+                class="h-auto w-full"
+                src="./dist/assets/slider7.png"
+                alt=""
+                srcset=""
+              />
             </div>
           </div>
 
-          <div class="whats-now bg-primary text-white font-bold flex justify-center items-center w-[7rem] h-[4rem] rounded-t-full relative left-[6rem] -top-[1rem] z-[1] lg:w-[19rem] lg:h-[9rem] lg:left-[30rem] lg:-top-[3rem]">
+          <div
+            class="whats-now bg-primary relative left-[6rem] sm:left-[12.5rem] -top-[1rem] z-[1] flex h-[4rem] w-[7rem] items-center justify-center md:left-64 rounded-t-full font-bold text-white lg:left-[30rem] lg:-top-[3rem] lg:h-[9rem] lg:w-[19rem]"
+          >
             <h1 class="text-xs lg:text-[26px]">What's Now</h1>
           </div>
 
           <div class="swiper-pagination"></div>
-        </div>
-      
-        <!-- <div class="gallery">
-          <div class="gallery-container">
-            <img class="gallery-item gallery-item-1" src="./dist/assets/slider1.png" data-index="1">
-            <img class="gallery-item gallery-item-2" src="./dist/assets/slider2.png" data-index="2">
-            <img class="gallery-item gallery-item-3" src="./dist/assets/slider3.jpg" data-index="3">
-            <img class="gallery-item gallery-item-4" src="./dist/assets/slider4.png" data-index="4">
-            <img class="gallery-item gallery-item-5" src="./dist/assets/slider5.png" data-index="5">
+          <div
+            class="shop-now absolute left-[5.5rem] flex flex-col items-center justify-center text-center sm:left-48 lg:left-[36rem] md:left-[15.5rem]"
+          >
+            <h4 class="mt-8 ml-[2.3rem] lg:mt-0 lg:mb-7 text-xs text-gray-600 lg:text-[26px]">
+              Shop Now
+            </h4>
+            <div
+              class="mt-3 ml-8 wrapp flex h-12 w-12 flex-col items-center justify-center rounded-full bg-[#cc0000] text-white hover:cursor-pointer"
+            >
+              <i
+                id="iconUp"
+                class="fas fas-xs fa-chevron-down w-[5rem] opacity-50 transition-opacity duration-200 ease-in-out"
+              ></i>
+              <i
+                id="iconDown"
+                class="fas fa-chevron-down w-[5rem] opacity-50 transition-opacity duration-[400ms] ease-in-out"
+              ></i>
+            </div>
           </div>
-          
-          <div class="gallery-controls"></div>
-        </div> -->
+        </div>
       </section>
+
+      <div class="container-kategori mt-32 sm:mt-52">
+        <div class="wrapper-kategori container mx-auto">
+          <nav class="flex flex-row sm:justify-center xl:justify-start xl:flex-row items-center">
+            <div class="menu flex items-center justify-center mr-10 text-[1.7rem]">
+              <h3 class="text-primary font-bold mr-3">Kategori</h3>
+              <i class="fas fa-bars text-primary"></i>
+            </div>
+            <div class="relative">
+              <input
+                type="text"
+                id="search-navbar"
+                class="block w-[20rem] rounded-lg border-2 border-primary bg-white p-2 pl-10 text-primary placeholder:text-red focus:border-primary focus:ring-primary sm:text-sm md:w-[15rem]"
+              />
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-10"
+              >
+                <svg
+                  class="h-5 w-5 text-primary"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+          </nav>
+
+          <div class="kategori-list flex justify-center xl:justify-start flex-wrap gap-5 mt-10">
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori1.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Burner Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori2.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Valve Proving System</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori3.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Air/Gas Radio Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori4.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Strainer</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori5.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Red Silicon Cable</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori6.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Gas Regulator</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori7.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Balancing</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori8.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Oil Nozzle</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori1.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Burner Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori2.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Valve Proving System</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori3.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Air/Gas Radio Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori4.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Strainer</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori5.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Red Silicon Cable</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori6.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Gas Regulator</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori7.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Balancing</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori8.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Oil Nozzle</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori1.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Burner Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori2.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Valve Proving System</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori3.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Air/Gas Radio Control</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori4.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Strainer</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori5.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Red Silicon Cable</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori6.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Gas Regulator</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori7.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Balancing</h6>              
+              </a>
+            </div>
+            <div class="list__brand hover:text-primary text-[#4a4e5a] font-bold w-auto">
+              <a href="#">
+                <img loading="lazy" class="rounded-[7px] h-40 min-h-[115px]" src="./dist/assets/kategori8.png" alt="" srcset="">
+                <h6 class="text-center mt-3">Oil Nozzle</h6>              
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

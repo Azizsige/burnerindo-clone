@@ -1,3 +1,13 @@
+const blinkIconUp = document.getElementById('iconUp');
+const blinkIconDown = document.getElementById('iconDown');
+// console.log(blinkIcon.className);
+
+setInterval(function(){
+  blinkIconUp.classList.toggle('opacity-50')
+  blinkIconDown.classList.toggle('opacity-50')
+}, 800)
+
+
 // set the target element that will be collapsed or expanded (eg. navbar menu)
 const targetEl = document.getElementById("targetEl");
 
