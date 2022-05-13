@@ -64,7 +64,7 @@
 
     .swiper-pagination{
       bottom: -0.5rem !important;
-      left: 1rem !important;
+      left: 0rem !important;
     }
   }
 }
