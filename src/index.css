@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  .swiper {
+  .hero .swiper {
     width: 80% !important;
     height: auto !important;
     margin: 0 !important;
   }
 
-  .swiper-slide {
+  .hero .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,12 +19,12 @@
     color: #fff;
   }
 
-  .swiper-pagination{
+  .hero .swiper-pagination{
     left: 0 !important;
     bottom: -1rem !important;
   }
 
-  .swiper-wrapper {
+  .hero .swiper-wrapper {
     width: 0 !important;
   }
 
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: 768px) {
-    .swiper {
+    .hero .swiper {
       width: 65% !important;
     }
 
