@@ -45,54 +45,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// Create a condition that targets viewports at least 768px wide
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-function handleTabletChange(e) {
-  // Check if the media query is true
-  if (e.matches) return (changed.src = "./assets/pixel-pc.png");
-  if (!e.matches) return (changed.src = "./assets/pixel-mobile.png");
-  if (e.matches) return (mentoring.src = "./assets/icon-mentoring-md.png");
-  if (!e.matches) return (mentoring.src = "./assets/icon-mentoring.png");
-}
-
-mediaQuery.addListener(handleTabletChange);
-
-var swiper = new Swiper(".swiper-sale", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  loop: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-});
-var swiper = new Swiper(".swiper-Bestsale", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  loop: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-});
-
-$(".owl-carousel").owlCarousel({
+$(".owl-flash").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
@@ -113,6 +66,51 @@ $(".owl-carousel").owlCarousel({
       items: 5,
       nav: true,
       loop: true,
+    },
+  },
+});
+$(".owl-best").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  lazyLoad: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 3,
+      nav: true,
+    },
+    1000: {
+      items: 5,
+      nav: true,
+      loop: true,
+    },
+  },
+});
+
+$(".owl-testimonial").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  lazyLoad: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 3,
+    },
+    1000: {
+      items: 1,
     },
   },
 });
