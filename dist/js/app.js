@@ -1,12 +1,11 @@
-const blinkIconUp = document.getElementById('iconUp');
-const blinkIconDown = document.getElementById('iconDown');
+const blinkIconUp = document.getElementById("iconUp");
+const blinkIconDown = document.getElementById("iconDown");
 // console.log(blinkIcon.className);
 
-setInterval(function(){
-  blinkIconUp.classList.toggle('opacity-50')
-  blinkIconDown.classList.toggle('opacity-50')
-}, 800)
-
+setInterval(function () {
+  blinkIconUp.classList.toggle("opacity-50");
+  blinkIconDown.classList.toggle("opacity-50");
+}, 800);
 
 // set the target element that will be collapsed or expanded (eg. navbar menu)
 const targetEl = document.getElementById("targetEl");
@@ -50,22 +49,22 @@ var swiper = new Swiper(".mySwiper", {
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 function handleTabletChange(e) {
   // Check if the media query is true
-  if (e.matches) return changed.src = "./assets/pixel-pc.png";
-  if (!e.matches) return changed.src = "./assets/pixel-mobile.png";
-  if (e.matches) return mentoring.src = "./assets/icon-mentoring-md.png";
-  if (!e.matches) return mentoring.src = "./assets/icon-mentoring.png";
+  if (e.matches) return (changed.src = "./assets/pixel-pc.png");
+  if (!e.matches) return (changed.src = "./assets/pixel-mobile.png");
+  if (e.matches) return (mentoring.src = "./assets/icon-mentoring-md.png");
+  if (!e.matches) return (mentoring.src = "./assets/icon-mentoring.png");
 }
 
 mediaQuery.addListener(handleTabletChange);
 
 var swiper = new Swiper(".swiper-sale", {
   slidesPerView: 5,
-        spaceBetween: 30,
-        loop: "true",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+  spaceBetween: 30,
+  loop: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
@@ -77,12 +76,12 @@ var swiper = new Swiper(".swiper-sale", {
 });
 var swiper = new Swiper(".swiper-Bestsale", {
   slidesPerView: 5,
-        spaceBetween: 30,
-        loop: "true",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+  spaceBetween: 30,
+  loop: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
@@ -93,22 +92,27 @@ var swiper = new Swiper(".swiper-Bestsale", {
   // },
 });
 
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:5
-      }
-  }
-})
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  lazyLoad: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 3,
+      nav: true,
+    },
+    1000: {
+      items: 5,
+      nav: true,
+      loop: true,
+    },
+  },
+});
