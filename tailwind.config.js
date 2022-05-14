@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./*.html", "./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js", "./dist/assets/*.{png, jpg}"],
+  content: ["./*.html", "./dist/js/*.js", "./dist/css/*.css", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
