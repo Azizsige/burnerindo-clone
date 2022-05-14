@@ -29,6 +29,10 @@ const options = {
 
 const collapse = new Collapse(targetEl, options);
 
+import Swiper from "swiper";
+// import Swiper styles
+import "swiper/css";
+
 var swiper = new Swiper(".mySwiper", {
   effect: "cards",
   grabCursor: true,
@@ -45,7 +49,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-$(".owl-flash").owlCarousel({
+$(".owl-flas").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,

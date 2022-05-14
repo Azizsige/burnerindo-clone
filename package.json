@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "swiper": "^8.1.4",
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
