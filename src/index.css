@@ -55,13 +55,22 @@
     height: auto !important;
   }
 
-  .owl-nav,
-  .owl-dots {
+  .wrapper-sale .owl-nav,
+  .wrapper-sale .owl-dots {
     display: none !important;
   }
 
+  .testimonial-people .owl-nav {
+    display: none !important;
+  }
+
+  .testimonial-people .owl-dots {
+    margin: 20px 0 0 0 !important;
+  }
+
   .owl-carousel.owl-loaded {
-    display: flex !important;
+    display: inline-flex !important;
+    margin: 2rem 0 2rem 0 !important;
   }
 
   @media (min-width: 640px) {

@@ -64,6 +64,11 @@ $(".owl-flas").owlCarousel({
       nav: true,
     },
     1000: {
+      items: 4,
+      nav: true,
+      loop: true,
+    },
+    1280: {
       items: 5,
       nav: true,
       loop: true,
@@ -88,6 +93,11 @@ $(".owl-best").owlCarousel({
       nav: true,
     },
     1000: {
+      items: 4,
+      nav: true,
+      loop: true,
+    },
+    1280: {
       items: 5,
       nav: true,
       loop: true,
