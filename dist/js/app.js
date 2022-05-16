@@ -125,3 +125,23 @@ $(".owl-testimonial").owlCarousel({
     },
   },
 });
+
+// $('#example').grouploop();
+
+// $("#demo").marquee();
+
+$(".wrapper-marq").marquee({
+  allowCss3Support: true,
+  css3easing: "linear",
+  easing: "linear",
+  delayBeforeStart: 1000,
+  direction: "up",
+  duplicated: false,
+  duration: 5000,
+  gap: 20,
+  pauseOnCycle: false,
+  pauseOnHover: false,
+  startVisible: false,
+});
+
+// var myMarquee = $('.marquee').marquee();
