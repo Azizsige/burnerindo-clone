@@ -60,6 +60,10 @@
     display: none !important;
   }
 
+  .owl-carousel.owl-loaded {
+    display: flex !important;
+  }
+
   @media (min-width: 640px) {
     .swiper-pagination {
       left: -1rem !important;
