@@ -29,11 +29,7 @@ const options = {
 
 const collapse = new Collapse(targetEl, options);
 
-import Swiper from "./swiper";
-// import Swiper styles
-import "swiper/css";
-
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   effect: "cards",
   grabCursor: true,
   cardsEffect: {
