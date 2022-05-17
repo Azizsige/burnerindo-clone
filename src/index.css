@@ -73,6 +73,10 @@
     margin: 2rem 0 2rem 0 !important;
   }
 
+  #demo {
+    height: 171px !important;
+  }
+
   @media (min-width: 640px) {
     .swiper-pagination {
       left: -1rem !important;

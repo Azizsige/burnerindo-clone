@@ -136,16 +136,21 @@ $(".owl-testimonial").owlCarousel({
   },
 });
 
-$(".wrapper-marq").marquee({
-  allowCss3Support: true,
-  css3easing: "linear",
-  easing: "linear",
-  delayBeforeStart: 1000,
+// $("#demo").marquee({
+//   allowCss3Support: true,
+//   css3easing: "linear",
+//   easing: "linear",
+//   delayBeforeStart: 1000,
+//   direction: "right",
+//   duplicated: true,
+//   duration: 1000,
+//   gap: 20,
+//   pauseOnCycle: false,
+//   pauseOnHover: false,
+//   startVisible: false,
+// });
+
+$("#demo").marquee({
   direction: "up",
   duplicated: false,
-  duration: 5000,
-  gap: 20,
-  pauseOnCycle: false,
-  pauseOnHover: false,
-  startVisible: false,
 });
