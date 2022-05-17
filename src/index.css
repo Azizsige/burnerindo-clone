@@ -92,9 +92,12 @@
   }
 
   @media (min-width: 1280px) {
-    .swiper-pagination {
-      bottom: 0.5rem !important;
-      left: 0rem !important;
+    .hero .swiper-pagination {
+      bottom: 1rem !important;
+    }
+
+    .swiper-3d .swiper-slide-shadow {
+      display: none !important;
     }
   }
 }

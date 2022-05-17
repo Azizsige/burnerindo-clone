@@ -40,10 +40,10 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 });
 
 $(".owl-flas").owlCarousel({
@@ -126,10 +126,6 @@ $(".owl-testimonial").owlCarousel({
   },
 });
 
-// $('#example').grouploop();
-
-// $("#demo").marquee();
-
 $(".wrapper-marq").marquee({
   allowCss3Support: true,
   css3easing: "linear",
@@ -143,5 +139,3 @@ $(".wrapper-marq").marquee({
   pauseOnHover: false,
   startVisible: false,
 });
-
-// var myMarquee = $('.marquee').marquee();
