@@ -1,13 +1,17 @@
 module.exports = {
-  content: ["./*.html", "./dist/js/*.js", "./dist/css/*.css", "./node_modules/flowbite/**/*.js"],
+  content: [
+    "./*.html",
+    "./dist/js/*.js",
+    "./dist/css/*.css",
+    "./node_modules/flowbite/**/*.js",
+    "./pages/**/*.html",
+  ],
   theme: {
     extend: {
       colors: {
-        'primary': '#cc0000'
-      }
+        primary: "#cc0000",
+      },
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-}
+  plugins: [require("flowbite/plugin")],
+};
