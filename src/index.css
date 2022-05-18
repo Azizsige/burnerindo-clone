@@ -87,6 +87,11 @@
     overflow-y: hidden !important;
   }
 
+  .js-marquee {
+    display: flex !important;
+    width: 77rem !important;
+  }
+
   @media (min-width: 640px) {
     .swiper-pagination {
       left: -1rem !important;

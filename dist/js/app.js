@@ -153,4 +153,8 @@ $(".owl-testimonial").owlCarousel({
 $("#demo").marquee({
   direction: "left",
   duplicated: false,
+  duration: 2900,
+  pauseOnCycle: false,
+  pauseOnHover: true,
+  startVisible: true,
 });
