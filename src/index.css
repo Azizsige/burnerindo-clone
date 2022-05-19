@@ -87,9 +87,10 @@
     overflow-y: hidden !important;
   }
 
-  .js-marquee {
-    display: flex !important;
-    width: 77rem !important;
+  .marquee {
+    width: 300px !important;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
   }
 
   @media (min-width: 640px) {

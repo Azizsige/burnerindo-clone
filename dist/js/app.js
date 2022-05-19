@@ -150,8 +150,15 @@ $(".owl-testimonial").owlCarousel({
 //   startVisible: false,
 // });
 
-$("#demo").marquee({
-  direction: "left",
-  duplicated: false,
+// $(".marquee").marquee({
+//   direction: "left",
+//   duplicated: true,
+//   duration: 2900,
+// });
+
+$(".marquee").marquee({
   duration: 2900,
 });
+
+// let brandsMobile = $(".marquee").marquee();
+// brandsMobile.marquee("resume");
