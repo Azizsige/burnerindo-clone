@@ -92,6 +92,18 @@
     overflow: hidden;
     /* border: 1px solid #ccc; */
   }
+  /* 
+  .container-sale .owl-item {
+    width: 10rem !important;
+  } */
+
+  html {
+    scroll-behavior: smooth !important;
+  }
+
+  * {
+    scroll-behavior: smooth !important;
+  }
 
   @media (min-width: 640px) {
     .swiper-pagination {
