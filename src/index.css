@@ -88,6 +88,10 @@
     margin-left: 0 !important;
   }
 
+  /* .sale-content__merk .owl-item {
+    width: 12rem !important;
+  } */
+
   .marquee {
     /* width: auto !important; */
     overflow: hidden;

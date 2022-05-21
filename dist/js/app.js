@@ -46,13 +46,13 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-$(".owl-flas").owlCarousel({
+$(".owl-flash").owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
   lazyLoad: true,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -69,7 +69,7 @@ $(".owl-flas").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 5,
+      items: 4,
       nav: true,
       loop: true,
     },
@@ -86,7 +86,7 @@ $(".owl-best").owlCarousel({
   nav: true,
   lazyLoad: true,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -103,7 +103,7 @@ $(".owl-best").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 5,
+      items: 4,
       nav: true,
       loop: true,
     },
