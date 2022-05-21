@@ -21,7 +21,7 @@
 
   .hero .swiper-pagination {
     left: 0 !important;
-    bottom: 1rem !important;
+    bottom: -1rem !important;
   }
 
   .hero .swiper-wrapper {
@@ -122,9 +122,8 @@
       width: 65% !important;
     }
 
-    .swiper-pagination {
+    .hero .swiper-pagination {
       bottom: 1rem !important;
-      left: 0rem !important;
     }
   }
 
@@ -132,6 +131,10 @@
     .data-list {
       width: 5rem !important;
       margin-left: 2rem !important;
+    }
+
+    .hero .swiper-pagination {
+      bottom: 1rem !important;
     }
   }
 
