@@ -23,7 +23,7 @@
     </title>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="bg-white px-6 py-2.5 md:px-14 xl:px-6">
+    <nav class="bg-white px-6 py-2.5 md:px-14 xl:px-[5rem]">
       <div
         class="container relative z-10 mx-auto flex flex-wrap items-center justify-between"
       >
@@ -35,7 +35,7 @@
             alt="Flowbite Logo"
           />
         </a>
-        <div class="flex md:order-1">
+        <div class="flex md:order-1 xl:ml-[11rem]">
           <button
             type="button"
             data-collapse-toggle="mobile-menu-3"
@@ -173,7 +173,7 @@
 
     <main>
       <section
-        class="hero mt-12 flex h-[13rem] items-center justify-center lg:-mt-32 lg:h-[50rem] xl:-mt-16 2xl:-mt-4"
+        class="hero mt-12 flex h-[13rem] items-center justify-center lg:-mt-32 lg:h-[50rem] xl:-mt-16 2xl:-mt-4 md:mt-[7rem]"
       >
         <img
           loading="lazy"
@@ -251,7 +251,7 @@
           </div>
 
           <div
-            class="whats-now bg-primary relative -top-[1rem] left-0 z-[1] mx-auto flex h-[4rem] w-[7rem] items-center justify-center rounded-t-full font-bold text-white lg:-top-[3rem] lg:h-[9rem] lg:w-[19rem] xl:h-28 xl:w-48"
+            class="whats-now bg-primary relative -top-[1rem] left-0 z-[1] mx-auto flex h-[4rem] w-[7rem] items-center justify-center rounded-t-full font-bold text-white md:-top-[3rem] lg:-top-[3rem] lg:h-[9rem] lg:w-[19rem] xl:-mt-[3rem] xl:h-28 xl:w-48"
           >
             <h1 class="text-xs lg:text-[26px] xl:text-[20px]">What's Now</h1>
           </div>
@@ -261,7 +261,7 @@
             class="shop-now absolute left-0 right-0 mx-auto flex flex-col items-center justify-center text-center"
           >
             <h4
-              class="mt-8 text-xs text-gray-600 lg:mt-10 lg:mb-7 lg:ml-0 lg:text-[26px] xl:mt-4"
+              class="mt-8 text-xs text-gray-600 md:mt-0 lg:mt-10 lg:mb-7 lg:ml-0 lg:text-[26px] xl:mt-4"
             >
               Shop Now
             </h4>
@@ -466,6 +466,7 @@
         </div>
       </div>
 
+      <!-- showing in mobile -->
       <div class="content-mobile block xl:hidden">
         <div
           id="shopNow"
@@ -1015,10 +1016,11 @@
                   <h6 class="font-bold sm:text-[12px] xl:text-lg">
                     PRODUK LARIS
                   </h6>
-                  <a href="" class="">
-                    <p class="sm:text-[10px] xl:text-base">
-                      Belanja sekarang <i class="fas fa-angle-right"></i>
-                    </p>
+                  <a
+                    href="./index.html"
+                    class="sm:text-[10px] xl:text-base relative z-10"
+                  >
+                    Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
                 </div>
                 <img
@@ -1039,10 +1041,11 @@
                   <h6 class="font-bold sm:text-[12px] xl:text-lg">
                     PRODUK TERBARU
                   </h6>
-                  <a href="" class="">
-                    <p class="sm:text-[10px] xl:text-base">
-                      Belanja sekarang <i class="fas fa-angle-right"></i>
-                    </p>
+                  <a
+                    href="./index.html"
+                    class="sm:text-[10px] xl:text-base relative z-10"
+                  >
+                    Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
                 </div>
                 <img
@@ -1065,10 +1068,11 @@
                   <h6 class="font-bold sm:text-[12px] xl:text-lg">
                     PRODUK PROMO
                   </h6>
-                  <a href="" class="">
-                    <p class="sm:text-[10px] xl:text-base">
-                      Belanja sekarang <i class="fas fa-angle-right"></i>
-                    </p>
+                  <a
+                    href="./index.html"
+                    class="sm:text-[10px] xl:text-base relative z-10"
+                  >
+                    Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
                 </div>
                 <img
@@ -1098,7 +1102,7 @@
                 >
                   <h6 class="text-2xl">FLASH SALE</h6>
                   <p
-                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
+                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
                   >
                     Temukan produk pilihanmu dengan harga langka!
                   </p>
@@ -1378,11 +1382,11 @@
                 <div
                   class="sale-content__text ml-0 mt-5 text-center font-bold text-white xl:ml-5 xl:mt-0 xl:text-left"
                 >
-                  <h6 class="text-2xl">FLASH SALE</h6>
+                  <h6 class="text-2xl">BEST SELLING</h6>
                   <p
-                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
+                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
                   >
-                    Temukan produk pilihanmu dengan harga langka!
+                    Temukan penjualan terbak kami disini!
                   </p>
                 </div>
                 <div
@@ -2348,7 +2352,7 @@
         </section>
       </div>
 
-      <!-- Just in Xl Device or wider -->
+      <!-- showing in xl device or wider -->
       <section class="content-marquee h-[205rem] xl:mt-[15rem] hidden xl:flex">
         <div class="left hidden xl:block">
           <ul
@@ -2898,10 +2902,11 @@
                     <h6 class="font-bold sm:text-[12px] xl:text-lg">
                       PRODUK LARIS
                     </h6>
-                    <a href="" class="">
-                      <p class="sm:text-[10px] xl:text-base">
-                        Belanja sekarang <i class="fas fa-angle-right"></i>
-                      </p>
+                    <a
+                      href="./index.html"
+                      class="sm:text-[10px] xl:text-base relative z-10"
+                    >
+                      Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
                   <img
@@ -2922,10 +2927,11 @@
                     <h6 class="font-bold sm:text-[12px] xl:text-lg">
                       PRODUK TERBARU
                     </h6>
-                    <a href="" class="">
-                      <p class="sm:text-[10px] xl:text-base">
-                        Belanja sekarang <i class="fas fa-angle-right"></i>
-                      </p>
+                    <a
+                      href="./index.html"
+                      class="sm:text-[10px] xl:text-base relative z-10"
+                    >
+                      Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
                   <img
@@ -2948,10 +2954,11 @@
                     <h6 class="font-bold sm:text-[12px] xl:text-lg">
                       PRODUK PROMO
                     </h6>
-                    <a href="" class="">
-                      <p class="sm:text-[10px] xl:text-base">
-                        Belanja sekarang <i class="fas fa-angle-right"></i>
-                      </p>
+                    <a
+                      href="./index.html"
+                      class="sm:text-[10px] xl:text-base relative z-10"
+                    >
+                      Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
                   </div>
                   <img
@@ -2981,7 +2988,7 @@
                   >
                     <h6 class="text-2xl">FLASH SALE</h6>
                     <p
-                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
+                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
                     >
                       Temukan produk pilihanmu dengan harga langka!
                     </p>
@@ -3251,11 +3258,11 @@
                   <div
                     class="sale-content__text ml-0 mt-5 text-center font-bold text-white xl:ml-5 xl:mt-0 xl:text-left"
                   >
-                    <h6 class="text-2xl">FLASH SALE</h6>
+                    <h6 class="text-2xl">BEST SELLING</h6>
                     <p
-                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
+                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
                     >
-                      Temukan produk pilihanmu dengan harga langka!
+                      Temukan penjualan terbaik kami disini!
                     </p>
                   </div>
                   <div
@@ -4225,7 +4232,7 @@
       </section>
       <!-- Just in Xl Device or wider -->
 
-      <section class="container-testimonial">
+      <section class="container-testimonial xl:mt-[7rem]">
         <div class="wrapper-testimonial text-center">
           <h6 class="text-primary text-sm font-bold lg:text-lg xl:text-xl">
             TESTIMONIALS

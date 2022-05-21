@@ -21,7 +21,7 @@
 
   .hero .swiper-pagination {
     left: 0 !important;
-    bottom: -1rem !important;
+    bottom: 1rem !important;
   }
 
   .hero .swiper-wrapper {
@@ -123,7 +123,7 @@
     }
 
     .swiper-pagination {
-      bottom: -0.5rem !important;
+      bottom: 1rem !important;
       left: 0rem !important;
     }
   }
