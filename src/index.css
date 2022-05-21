@@ -85,6 +85,7 @@
     height: 22rem !important;
     width: 25rem !important;
     overflow-y: hidden !important;
+    margin-left: 0 !important;
   }
 
   .marquee {
@@ -120,6 +121,13 @@
     .swiper-pagination {
       bottom: -0.5rem !important;
       left: 0rem !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .data-list {
+      width: 5rem !important;
+      margin-left: 2rem !important;
     }
   }
 
