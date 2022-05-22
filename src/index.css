@@ -4,8 +4,8 @@
 
 @layer base {
   .heroIndex .swiper {
-    width: 66% !important;
-    height: auto !important;
+    width: 70% !important;
+    height: auto;
     margin: 0 !important;
   }
 
