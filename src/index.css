@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  .hero .swiper {
+  .heroIndex .swiper {
     width: 66% !important;
     height: auto !important;
     margin: 0 !important;
   }
 
-  .hero .swiper-slide {
+  .heroIndex .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,12 +19,12 @@
     color: #fff;
   }
 
-  .hero .swiper-pagination {
+  .heroIndex .swiper-pagination {
     left: 0 !important;
     bottom: -1rem !important;
   }
 
-  .hero .swiper-wrapper {
+  .heroIndex .swiper-wrapper {
     width: 0 !important;
   }
 
@@ -118,11 +118,11 @@
   }
 
   @media (min-width: 768px) {
-    .hero .swiper {
+    .heroIndex .swiper {
       width: 65% !important;
     }
 
-    .hero .swiper-pagination {
+    .heroIndex .swiper-pagination {
       bottom: 1rem !important;
     }
   }
@@ -133,13 +133,13 @@
       margin-left: 2rem !important;
     }
 
-    .hero .swiper-pagination {
+    .heroIndex .swiper-pagination {
       bottom: 1rem !important;
     }
   }
 
   @media (min-width: 1280px) {
-    .hero .swiper-pagination {
+    .heroIndex .swiper-pagination {
       bottom: 1rem !important;
     }
 
