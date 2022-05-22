@@ -38,7 +38,7 @@
 
       @media (min-width: 1280px) {
         .heroLogin .swiper {
-          width: 28rem;
+          width: 22rem;
           height: 76%;
           display: block;
           position: absolute;
@@ -48,15 +48,23 @@
           right: 0rem;
           top: 10rem;
         }
+        .swiper-3d .swiper-slide-shadow-right,
+        .swiper-3d .swiper-slide-shadow-left {
+          background-image: none;
+        }
       }
 
       @media (min-width: 1536px) {
         .heroLogin .swiper {
-          width: 28rem;
+          width: 22rem;
           height: 76%;
           display: block;
           position: absolute;
           z-index: 0;
+          margin: auto;
+          left: 0;
+          right: 5rem;
+          top: 10rem;
         }
       }
     </style>
@@ -221,7 +229,7 @@
     <main>
       <section class="heroLogin">
         <div
-          class="mx-auto flex justify-center w-full h-[27rem] 2xl:h-[36rem] 2xl:min-h-screen xl:h-[35rem] xl:min-h-screen"
+          class="mx-auto flex justify-center w-full h-[27rem] 2xl:h-[33rem] xl:h-[30rem]"
         >
           <div
             class="bg-white w-full px-4 py-2.5 md:px-14 xl:px-24 mx-auto flex flex-col justify-center items-center xl:items-start 2xl:items-start"
@@ -297,7 +305,7 @@
               SALAM KENAL
             </h2>
             <p
-              class="xl:ml-[5rem] text-white mb-6 text-base xl:text-xl xl:mb-6 2xl:text-right xl:text-right"
+              class="xl:ml-[6rem] text-white mb-6 text-base xl:text-xl xl:mb-6 2xl:text-right xl:text-right"
             >
               Masukkan datamu dan mulailah berpetualang dengan kami!
             </p>
