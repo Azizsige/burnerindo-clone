@@ -12,7 +12,7 @@ btnHamburger.addEventListener("click", function () {
 
   if (btnHamburger.classList.contains("open")) {
     btnHamburger.innerHTML = `
-    <svg class="h-6 w-6 transition-all ease-in-out duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+    <svg fill="currentColor" class="h-6 w-6 transition-all ease-in-out duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
     `;
     return;
   } else {
@@ -73,10 +73,10 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 });
 
 $(".owl-flash").owlCarousel({
@@ -169,29 +169,26 @@ $(".owl-testimonial").owlCarousel({
   },
 });
 
-// $("#demo").marquee({
-//   allowCss3Support: true,
-//   css3easing: "linear",
-//   easing: "linear",
-//   delayBeforeStart: 1000,
-//   direction: "right",
-//   duplicated: true,
-//   duration: 1000,
-//   gap: 20,
-//   pauseOnCycle: false,
-//   pauseOnHover: false,
-//   startVisible: false,
-// });
-
-// $(".marquee").marquee({
-//   direction: "left",
-//   duplicated: true,
-//   duration: 2900,
-// });
-
 $(".marquee").marquee({
   duration: 2900,
 });
 
-// let brandsMobile = $(".marquee").marquee();
-// brandsMobile.marquee("resume");
+// Multi Language
+var i18n = domI18n({
+  selector: "[data-translatable]",
+  separator: " // ",
+  languages: ["id", "en"],
+  defaultLanguage: "id",
+  currentLanguage: "id",
+});
+
+let languange = document.querySelectorAll(".language");
+languange.forEach(function (e) {
+  e.addEventListener("click", function () {
+    i18n.changeLanguage(this.getAttribute("data-lang-ref"));
+    e.preventDefault();
+    //   let target = el.target;
+
+    // console.log(target.getAttribute("data-lang-ref"));
+  });
+});

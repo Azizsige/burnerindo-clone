@@ -4,9 +4,13 @@
 
 @layer base {
   .heroIndex .swiper {
-    width: 70% !important;
+    width: 65% !important;
     height: auto;
     margin: 0 !important;
+  }
+
+  .swiper-3d .swiper-slide-shadow {
+    background: none !important;
   }
 
   .heroIndex .swiper-slide {

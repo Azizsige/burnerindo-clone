@@ -56,7 +56,7 @@
               ></path>
             </svg>
           </button>
-          <div class="relative hidden md:block">
+          <div class="relative hidden md:block xl:ml-[-9rem]">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
             >
@@ -76,7 +76,7 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[23rem]"
+              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
               placeholder="Cari..."
             />
           </div>
@@ -144,29 +144,47 @@
             />
           </div>
           <ul
-            class="mt-4 flex flex-col text-[1.2rem] md:mt-0 md:flex-row md:space-x-8 md:font-medium"
+            class="mt-4 flex flex-col text-[1.2rem] md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium"
           >
             <li>
               <a
                 href="./pages/login.html"
                 class="block rounded py-2 pr-4 pl-3 text-gray-700 md:p-0 md:text-white"
                 aria-current="page"
-                >Masuk/Daftar</a
+                data-translatable
               >
+                <span>Masuk/Daftar</span>
+                <span>Login/Register</span>
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
-                >About Us</a
+                data-translatable
               >
+                <span>Tentang Kami</span>
+                <span>About Us</span>
+              </a>
             </li>
             <li>
               <a
                 href="#"
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
-                >Cart <i class="fas fa-shopping-cart"></i
-              ></a>
+                data-translatable
+              >
+                <span>Keranjang <i class="fas fa-shopping-cart"></i></span>
+                <span>Cart <i class="fas fa-shopping-cart"></i></span>
+              </a>
+            </li>
+            <li class="flex justify-center items-center">
+              <a href="#" class="language mr-5" data-lang-ref="id">
+                <img class="h-6 w-6" src="./assets/indonesia.png" />
+              </a>
+              |
+              <a href="#" class="language ml-5" data-lang-ref="en">
+                <img class="h-6 w-6" src="./assets/united.png" />
+              </a>
             </li>
           </ul>
         </div>
@@ -255,7 +273,10 @@
           <div
             class="whats-now bg-primary relative -top-[1rem] left-0 z-[1] mx-auto flex h-[4rem] w-[7rem] items-center justify-center rounded-t-full font-bold text-white md:-top-[3rem] lg:-top-[3rem] lg:h-[9rem] lg:w-[19rem] xl:-mt-[3rem] xl:h-28 xl:w-48"
           >
-            <h1 class="text-xs lg:text-[26px] xl:text-[20px]">What's Now</h1>
+            <h1 class="text-xs lg:text-[26px] xl:text-[20px]" data-translatable>
+              <span>Sekarang Apa</span>
+              <span>What's Now</span>
+            </h1>
           </div>
 
           <div class="swiper-pagination"></div>
@@ -481,8 +502,12 @@
               <div
                 class="menu flex items-center justify-center text-[1.7rem] xl:mr-10"
               >
-                <h3 class="text-primary mr-3 text-[24px] font-bold">
-                  Kategori
+                <h3
+                  class="text-primary mr-3 text-[24px] font-bold"
+                  data-translatable
+                >
+                  <span>Kategori</span>
+                  <span>Category</span>
                 </h3>
                 <i class="fas fa-bars text-primary sm:mr-5"></i>
               </div>
@@ -641,8 +666,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
-                        Burner Control
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        <span> Kontrol Pembakar </span>
+                        <span> Burner Control </span>
                       </h6>
                     </a>
                   </div>
@@ -657,7 +686,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Valve Proving System
                       </h6>
                     </a>
@@ -673,7 +705,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Air/Gas Radio Control
                       </h6>
                     </a>
@@ -689,7 +724,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Strainer</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Strainer
+                      </h6>
                     </a>
                   </div>
                   <div
@@ -719,7 +759,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Gas Regulator
                       </h6>
                     </a>
@@ -735,7 +778,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Balancing</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Balancing
+                      </h6>
                     </a>
                   </div>
                   <div
@@ -749,7 +797,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Oil Nozzle</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Oil Nozzle
+                      </h6>
                     </a>
                   </div>
                   <div
@@ -763,7 +816,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Burner Control
                       </h6>
                     </a>
@@ -779,7 +835,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Valve Proving System
                       </h6>
                     </a>
@@ -795,7 +854,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Air/Gas Radio Control
                       </h6>
                     </a>
@@ -811,7 +873,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Strainer</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Strainer
+                      </h6>
                     </a>
                   </div>
                   <div
@@ -825,7 +892,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Red Silicon Cable
                       </h6>
                     </a>
@@ -841,7 +911,10 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
                         Gas Regulator
                       </h6>
                     </a>
@@ -857,7 +930,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Balancing</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Balancing
+                      </h6>
                     </a>
                   </div>
                   <div
@@ -871,7 +949,12 @@
                         alt=""
                         srcset=""
                       />
-                      <h6 class="mt-3 text-center text-[12px]">Oil Nozzle</h6>
+                      <h6
+                        class="mt-3 text-center text-[12px]"
+                        data-translatable
+                      >
+                        Oil Nozzle
+                      </h6>
                     </a>
                   </div>
                 </div>
@@ -893,12 +976,16 @@
                 <div
                   class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                 >
-                  <h6 class="font-bold sm:text-[12px] xl:text-lg">
+                  <h6
+                    class="font-bold sm:text-[12px] xl:text-lg"
+                    data-translatable
+                  >
                     PRODUK LARIS
                   </h6>
                   <a
                     href="./index.html"
                     class="sm:text-[10px] xl:text-base relative z-10"
+                    data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
@@ -918,12 +1005,16 @@
                 <div
                   class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                 >
-                  <h6 class="font-bold sm:text-[12px] xl:text-lg">
+                  <h6
+                    class="font-bold sm:text-[12px] xl:text-lg"
+                    data-translatable
+                  >
                     PRODUK TERBARU
                   </h6>
                   <a
                     href="./index.html"
                     class="sm:text-[10px] xl:text-base relative z-10"
+                    data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
@@ -945,12 +1036,16 @@
                 <div
                   class="produkLaris--text flex h-full flex-col justify-between text-[#4a4e5a]"
                 >
-                  <h6 class="font-bold sm:text-[12px] xl:text-lg">
+                  <h6
+                    class="font-bold sm:text-[12px] xl:text-lg"
+                    data-translatable
+                  >
                     PRODUK PROMO
                   </h6>
                   <a
                     href="./index.html"
                     class="sm:text-[10px] xl:text-base relative z-10"
+                    data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
                   </a>
@@ -980,9 +1075,10 @@
                 <div
                   class="sale-content__text ml-0 mt-5 text-center font-bold text-white xl:ml-5 xl:mt-0 xl:text-left"
                 >
-                  <h6 class="text-2xl">FLASH SALE</h6>
+                  <h6 class="text-2xl" data-translatable>FLASH SALE</h6>
                   <p
                     class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
+                    data-translatable
                   >
                     Temukan produk pilihanmu dengan harga langka!
                   </p>
@@ -4314,7 +4410,7 @@
       <!-- Tahap Testing -->
     </main>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script> -->
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -4326,6 +4422,7 @@
       type="text/javascript"
       src="./dist/js/jquery.autoscroll.js"
     ></script>
+    <script src="./dist/js/dom-i18n.min.js"></script>
     <script src="./dist/js/app.js"></script>
   </body>
 </html>
