@@ -147,4 +147,11 @@
       display: none !important;
     }
   }
+
+  @media (min-width: 1536px) {
+    .data-list {
+      width: 8rem !important;
+      margin-left: 3rem !important;
+    }
+  }
 }
