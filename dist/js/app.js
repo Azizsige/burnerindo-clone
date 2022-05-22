@@ -1,6 +1,39 @@
 const blinkIconUp = document.getElementById("iconUp");
 const blinkIconDown = document.getElementById("iconDown");
+const btnHamburger = document.getElementById("btnHamburger");
+const sidebar = document.getElementById("sidebar");
+const open = document.getElementById("open");
 // console.log(blinkIcon.className);
+
+btnHamburger.addEventListener("click", function () {
+  sidebar.classList.toggle("left-[-12rem]");
+  sidebar.classList.toggle("left-0");
+  btnHamburger.classList.toggle("open");
+
+  if (btnHamburger.classList.contains("open")) {
+    btnHamburger.innerHTML = `
+    <svg class="h-6 w-6 transition-all ease-in-out duration-300' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
+    `;
+    return;
+  } else {
+    btnHamburger.innerHTML = `
+    <svg
+    id="open"
+    class="h-6 w-6 transition-all ease-in-out duration-300"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+      clip-rule="evenodd"
+    ></path>
+  </svg>
+    `;
+    return;
+  }
+});
 
 setInterval(function () {
   blinkIconUp.classList.toggle("opacity-50");
@@ -27,7 +60,7 @@ const options = {
   },
 };
 
-const collapse = new Collapse(targetEl, options);
+// const collapse = new Collapse(targetEl, options);
 
 const swiper = new Swiper(".mySwiper", {
   effect: "cards",
