@@ -74,7 +74,7 @@ $(".owl-flash").owlCarousel({
       loop: true,
     },
     1536: {
-      items: 5,
+      items: 4,
       nav: true,
       loop: true,
     },
@@ -108,7 +108,7 @@ $(".owl-best").owlCarousel({
       loop: true,
     },
     1536: {
-      items: 5,
+      items: 4,
       nav: true,
       loop: true,
     },
