@@ -24,8 +24,8 @@ window.onscroll = function () {
 };
 
 btnHamburger.addEventListener("click", function () {
-  sidebar.classList.toggle("left-[-12rem]");
-  sidebar.classList.toggle("left-0");
+  sidebar.classList.toggle("left-[-100%]");
+  sidebar.classList.toggle("left-[-2.5rem]");
   btnHamburger.classList.toggle("open");
 
   if (btnHamburger.classList.contains("open")) {
@@ -91,10 +91,10 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 $(".owl-flash").owlCarousel({
@@ -120,12 +120,12 @@ $(".owl-flash").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 4,
+      items: 2,
       nav: true,
       loop: true,
     },
     1536: {
-      items: 4,
+      items: 2,
       nav: true,
       loop: true,
     },
@@ -154,12 +154,12 @@ $(".owl-best").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 4,
+      items: 3,
       nav: true,
       loop: true,
     },
     1536: {
-      items: 4,
+      items: 3,
       nav: true,
       loop: true,
     },
