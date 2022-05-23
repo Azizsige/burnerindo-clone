@@ -23,7 +23,7 @@
     </title>
   </head>
   <body class="overflow-x-hidden">
-    <nav class="bg-white px-6 py-2.5 md:px-14 xl:px-[5rem]">
+    <nav id="navbar" class="bg-white px-6 py-2.5 md:px-14 xl:px-[5rem]">
       <div
         class="container relative z-10 mx-auto flex flex-wrap items-center justify-between"
       >
@@ -83,7 +83,7 @@
           <button
             id="btnHamburger"
             type="button"
-            class="inline items-center transition-all ease-in-out duration-300 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden xl:ml-[1.9rem]"
+            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden xl:ml-[1.9rem]"
             aria-controls="mobile-menu-3"
             aria-expanded="false"
           >
@@ -116,7 +116,7 @@
         </div>
         <div
           id="sidebar"
-          class="w-[11rem] left-[-12rem] transitioin-all ease-in-out duration-300 md:left-0 items-center justify-between md:order-2 md:flex md:w-auto absolute md:static top-[4rem] md:top-0 bg-white md:bg-transparent h-screen md:h-auto"
+          class="transitioin-all absolute left-[-12rem] top-[4rem] h-screen w-[11rem] items-center justify-between bg-white duration-300 ease-in-out md:static md:left-0 md:top-0 md:order-2 md:flex md:h-auto md:w-auto md:bg-transparent"
           id="mobile-menu-3"
         >
           <div class="relative mt-3 md:hidden">
@@ -139,17 +139,18 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[85%] md:w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm"
+              class="block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
               placeholder="Search..."
             />
           </div>
           <ul
-            class="mt-4 flex flex-col text-[1.2rem] md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium"
+            id="changedColor"
+            class="mt-4 flex flex-col text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium xl:text-white"
           >
             <li>
               <a
                 href="./pages/login.html"
-                class="block rounded py-2 pr-4 pl-3 text-gray-700 md:p-0 md:text-white"
+                class="block rounded py-2 pr-4 pl-3 md:p-0"
                 aria-current="page"
                 data-translatable
               >
@@ -160,7 +161,7 @@
             <li>
               <a
                 href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
                 data-translatable
               >
                 <span>Tentang Kami</span>
@@ -170,14 +171,14 @@
             <li>
               <a
                 href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white lg:text-white"
+                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white"
                 data-translatable
               >
                 <span>Keranjang <i class="fas fa-shopping-cart"></i></span>
                 <span>Cart <i class="fas fa-shopping-cart"></i></span>
               </a>
             </li>
-            <li class="flex justify-center items-center">
+            <li class="flex items-center justify-center">
               <a href="#" class="language mr-5" data-lang-ref="id">
                 <img class="h-6 w-6" src="./assets/indonesia.png" />
               </a>
@@ -193,7 +194,7 @@
 
     <main>
       <section
-        class="heroIndex mt-12 flex h-[13rem] items-center justify-center lg:-mt-32 lg:h-[50rem] xl:-mt-16 2xl:-mt-[6rem] md:mt-[7rem]"
+        class="heroIndex mt-12 flex h-[13rem] items-center justify-center md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:-mt-16 2xl:-mt-[6rem]"
       >
         <img
           loading="lazy"
@@ -984,7 +985,7 @@
                   </h6>
                   <a
                     href="./index.html"
-                    class="sm:text-[10px] xl:text-base relative z-10"
+                    class="relative z-10 sm:text-[10px] xl:text-base"
                     data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
@@ -1013,7 +1014,7 @@
                   </h6>
                   <a
                     href="./index.html"
-                    class="sm:text-[10px] xl:text-base relative z-10"
+                    class="relative z-10 sm:text-[10px] xl:text-base"
                     data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
@@ -1044,7 +1045,7 @@
                   </h6>
                   <a
                     href="./index.html"
-                    class="sm:text-[10px] xl:text-base relative z-10"
+                    class="relative z-10 sm:text-[10px] xl:text-base"
                     data-translatable
                   >
                     Belanja sekarang <i class="fas fa-angle-right"></i>
@@ -1077,7 +1078,7 @@
                 >
                   <h6 class="text-2xl" data-translatable>FLASH SALE</h6>
                   <p
-                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
+                    class="mt-3 text-sm lg:p-[1rem] xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
                     data-translatable
                   >
                     Temukan produk pilihanmu dengan harga langka!
@@ -1360,7 +1361,7 @@
                 >
                   <h6 class="text-2xl">BEST SELLING</h6>
                   <p
-                    class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
+                    class="mt-3 text-sm lg:p-[1rem] xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
                   >
                     Temukan penjualan terbak kami disini!
                   </p>
@@ -2298,7 +2299,7 @@
                       15
                     </div>
                     <div
-                      class="h-8 w-8 cursor-pointer items-center justify-center border-t-2 border-orange-600 leading-5 transition duration-150 ease-in hidden"
+                      class="hidden h-8 w-8 cursor-pointer items-center justify-center border-t-2 border-orange-600 leading-5 transition duration-150 ease-in"
                     >
                       2
                     </div>
@@ -2330,11 +2331,11 @@
 
       <!-- showing in xl device or wider -->
       <section
-        class="content-marquee 2xl:h-[210rem] xl:mt-[15rem] hidden xl:flex xl:h-[175rem]"
+        class="content-marquee hidden xl:mt-[15rem] xl:flex xl:h-[175rem] 2xl:mt-[10rem] 2xl:h-[193rem]"
       >
         <div class="left hidden xl:block">
           <ul
-            class="data-list top-[40%] sticky left-8 hidden xl:block"
+            class="data-list sticky top-[40%] left-8 hidden xl:block"
             data-autoscroll
           >
             <li class="mb-5">
@@ -2449,7 +2450,7 @@
             </li>
           </ul>
         </div>
-        <div class="right xl:w-[74rem] 2xl:w-[80rem]">
+        <div class="right xl:w-[74rem] 2xl:w-full">
           <div id="shopNow" class="container-kategori -mt-16 px-6 xl:px-0">
             <div class="wrapper-kategori">
               <nav
@@ -2498,7 +2499,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori1.webp"
                           alt=""
                           srcset=""
@@ -2514,7 +2515,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori2.webp"
                           alt=""
                           srcset=""
@@ -2530,7 +2531,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori3.webp"
                           alt=""
                           srcset=""
@@ -2546,7 +2547,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori4.webp"
                           alt=""
                           srcset=""
@@ -2560,7 +2561,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori5.webp"
                           alt=""
                           srcset=""
@@ -2576,7 +2577,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori6.webp"
                           alt=""
                           srcset=""
@@ -2592,7 +2593,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori7.webp"
                           alt=""
                           srcset=""
@@ -2606,7 +2607,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori8.webp"
                           alt=""
                           srcset=""
@@ -2620,7 +2621,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori1.webp"
                           alt=""
                           srcset=""
@@ -2636,7 +2637,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori2.webp"
                           alt=""
                           srcset=""
@@ -2652,7 +2653,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori3.webp"
                           alt=""
                           srcset=""
@@ -2668,7 +2669,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori4.webp"
                           alt=""
                           srcset=""
@@ -2682,7 +2683,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori5.webp"
                           alt=""
                           srcset=""
@@ -2698,7 +2699,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori6.webp"
                           alt=""
                           srcset=""
@@ -2714,7 +2715,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori7.webp"
                           alt=""
                           srcset=""
@@ -2728,7 +2729,7 @@
                       <a href="#">
                         <img
                           loading="lazy"
-                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[7rem]"
+                          class="h-32 min-h-[115px] rounded-[7px] xl:h-[7rem] 2xl:h-[11rem]"
                           src="./assets/kategori8.webp"
                           alt=""
                           srcset=""
@@ -2760,7 +2761,7 @@
                     </h6>
                     <a
                       href="./index.html"
-                      class="sm:text-[10px] xl:text-base relative z-10"
+                      class="relative z-10 sm:text-[10px] xl:text-base"
                     >
                       Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
@@ -2785,7 +2786,7 @@
                     </h6>
                     <a
                       href="./index.html"
-                      class="sm:text-[10px] xl:text-base relative z-10"
+                      class="relative z-10 sm:text-[10px] xl:text-base"
                     >
                       Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
@@ -2812,7 +2813,7 @@
                     </h6>
                     <a
                       href="./index.html"
-                      class="sm:text-[10px] xl:text-base relative z-10"
+                      class="relative z-10 sm:text-[10px] xl:text-base"
                     >
                       Belanja sekarang <i class="fas fa-angle-right"></i>
                     </a>
@@ -2829,7 +2830,7 @@
           </section>
 
           <section
-            class="container-sale mt-32 mb-64 px-6 xl:px-12 xl:mt-56 xl:mb-48"
+            class="container-sale mt-32 mb-64 px-6 xl:mt-56 xl:mb-48 xl:px-12"
           >
             <div class="container mx-auto">
               <div
@@ -2846,7 +2847,7 @@
                   >
                     <h6 class="text-2xl">FLASH SALE</h6>
                     <p
-                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
+                      class="mt-3 text-sm lg:p-[1rem] xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
                     >
                       Temukan produk pilihanmu dengan harga langka!
                     </p>
@@ -2857,7 +2858,7 @@
                     <div class="owl-carousel owl-flash">
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -2892,7 +2893,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -2906,7 +2907,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -2941,7 +2942,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -2955,7 +2956,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -2990,7 +2991,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3004,7 +3005,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3039,7 +3040,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3053,7 +3054,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3088,7 +3089,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3118,7 +3119,7 @@
                   >
                     <h6 class="text-2xl">BEST SELLING</h6>
                     <p
-                      class="mt-3 text-sm xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px] lg:p-[1rem]"
+                      class="mt-3 text-sm lg:p-[1rem] xl:text-[17px] xl:leading-[2.25rem] 2xl:text-[23px]"
                     >
                       Temukan penjualan terbaik kami disini!
                     </p>
@@ -3129,7 +3130,7 @@
                     <div class="owl-carousel owl-best">
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3164,7 +3165,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3178,7 +3179,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3213,7 +3214,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3227,7 +3228,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3262,7 +3263,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3276,7 +3277,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3311,7 +3312,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -3325,7 +3326,7 @@
                       </div>
                       <div class="sale-content__flash">
                         <div
-                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[14rem]"
+                          class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] 2xl:h-[27.5rem] 2xl:max-w-[16rem]"
                         >
                           <a href="#">
                             <img
@@ -3360,7 +3361,7 @@
                               </p>
                             </div>
                             <div
-                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[1rem] 2xl:text-base"
+                              class="ml-8 inline items-center rounded-lg bg-green-400 py-2 px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-base xl:ml-4 2xl:ml-[6rem] 2xl:text-base"
                             >
                               Stock Tersedia
                             </div>
@@ -4375,7 +4376,7 @@
       </footer>
 
       <div
-        class="floating-sosmed fixed right-8 top-[70%] lg:top-[48%] z-[5] flex h-32 flex-col justify-between lg:h-[7rem] xl:top-[77%] xl:h-32 2xl:top-[74%] 2xl:h-[10rem]"
+        class="floating-sosmed fixed right-8 top-[70%] z-[5] flex h-32 flex-col justify-between lg:top-[48%] lg:h-[7rem] xl:top-[77%] xl:h-32 2xl:top-[74%] 2xl:h-[10rem]"
       >
         <button
           class="instagram bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"

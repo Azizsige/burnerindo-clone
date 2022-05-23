@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  .stickyNavbar {
+    @apply xl:text-primary fixed top-0 left-0 right-0 z-[99999] shadow-xl xl:bg-white xl:shadow-2xl;
+  }
+
+  .changedColor {
+    @apply lg:text-primary;
+  }
+
   .heroIndex .swiper {
     width: 65% !important;
     height: auto;

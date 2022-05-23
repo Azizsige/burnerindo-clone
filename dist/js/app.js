@@ -3,7 +3,25 @@ const blinkIconDown = document.getElementById("iconDown");
 const btnHamburger = document.getElementById("btnHamburger");
 const sidebar = document.getElementById("sidebar");
 const open = document.getElementById("open");
-// console.log(blinkIcon.className);
+
+window.onscroll = function () {
+  const header = document.getElementById("navbar");
+  const changedColor = document.getElementById("changedColor");
+  const fixedHeader = header.offsetTop;
+
+  if (window.pageYOffset > fixedHeader) {
+    header.classList.add("stickyNavbar");
+    changedColor.classList.add("changedColor");
+    changedColor.classList.remove("xl:text-white");
+    changedColor.classList.remove("text-gray-700");
+    // header.classList.remove("bg-transparent");
+  } else {
+    header.classList.remove("stickyNavbar");
+    changedColor.classList.add("xl:text-white");
+    changedColor.classList.add("text-gray-700");
+    // header.classList.add("bg-transparent");
+  }
+};
 
 btnHamburger.addEventListener("click", function () {
   sidebar.classList.toggle("left-[-12rem]");
@@ -187,8 +205,5 @@ languange.forEach(function (e) {
   e.addEventListener("click", function () {
     i18n.changeLanguage(this.getAttribute("data-lang-ref"));
     e.preventDefault();
-    //   let target = el.target;
-
-    // console.log(target.getAttribute("data-lang-ref"));
   });
 });
