@@ -105,14 +105,8 @@
   } */
 
   .marquee {
-    /* width: auto !important; */
     overflow: hidden;
-    /* border: 1px solid #ccc; */
   }
-  /* 
-  .container-sale .owl-item {
-    width: 10rem !important;
-  } */
 
   html {
     scroll-behavior: smooth !important;
@@ -157,6 +151,10 @@
 
     .swiper-3d .swiper-slide-shadow {
       display: none !important;
+    }
+
+    .fas::before {
+      font-size: 14px !important;
     }
   }
 
