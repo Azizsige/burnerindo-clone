@@ -102,7 +102,7 @@ $(".owl-flash").owlCarousel({
   margin: 10,
   nav: true,
   lazyLoad: true,
-  // autoplay: true,
+  autoplay: true,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
@@ -120,7 +120,7 @@ $(".owl-flash").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 2,
+      items: 3,
       nav: true,
       loop: true,
     },
@@ -136,7 +136,7 @@ $(".owl-best").owlCarousel({
   margin: 10,
   nav: true,
   lazyLoad: true,
-  // autoplay: true,
+  autoplay: true,
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
   responsive: {
@@ -159,7 +159,7 @@ $(".owl-best").owlCarousel({
       loop: true,
     },
     1536: {
-      items: 3,
+      items: 4,
       nav: true,
       loop: true,
     },
