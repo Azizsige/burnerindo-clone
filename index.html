@@ -25,7 +25,7 @@
   <body class="overflow-x-hidden">
     <nav id="navbar" class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]">
       <div
-        class="container relative z-10 mx-auto flex flex-wrap items-center justify-between"
+        class="container relative z-10 mx-auto flex flex-nowrap xl:flex-wrap items-center justify-between"
       >
         <a href="#" class="flex items-center">
           <img
@@ -36,26 +36,12 @@
           />
         </a>
         <div class="flex md:order-1 xl:ml-[4rem] 2xl:ml-[11rem]">
-          <button
-            type="button"
-            data-collapse-toggle="mobile-menu-3"
-            aria-controls="mobile-menu-3"
-            aria-expanded="false"
-            class="mr-1 rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700 md:hidden"
-          >
-            <svg
-              class="h-5 w-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+        <input
+          type="text"
+          id="search-navbar"
+          class="block lg:hidden w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 mx-auto lg:mx-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
+          placeholder="Search..."
+        />
           <div class="relative hidden md:block xl:ml-[10rem]">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
@@ -1779,11 +1765,11 @@
             <!-- Belum Selesai -->
             <div class="merks-container relative z-0">
               <div
-                class="merks mt-12 flex flex-wrap justify-evenly gap-4 2xl:gap-8"
+                class="merks mt-12 flex flex-wrap justify-evenly gap-[2rem] 2xl:gap-8"
               >
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -1836,7 +1822,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -1889,7 +1875,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -1942,7 +1928,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -1995,7 +1981,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2048,7 +2034,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2101,7 +2087,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2154,7 +2140,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2207,7 +2193,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2260,7 +2246,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2313,7 +2299,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
@@ -2366,7 +2352,7 @@
                 </div>
                 <div class="merk">
                   <div
-                    class="xl:h-23rem relative z-[12] h-[18rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
+                    class="xl:h-23rem relative z-[12] h-[19rem] max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[22.5rem] lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[14rem]"
                   >
                     <a href="#">
                       <img
