@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#cc0000",
+        kategoriHero: 'rgba(232, 227, 227, .5)'
       },
     },
   },
