@@ -22,10 +22,10 @@
   <body>
     <nav
       id="navbar"
-      class="bg-white xl:bg-transparent px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]"
+      class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
     >
       <div
-        class="container relative z-10 mx-auto flex flex-nowrap xl:flex-wrap items-center justify-between"
+        class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
       >
         <a href="#" class="flex items-center">
           <img
@@ -39,7 +39,7 @@
           <input
             type="text"
             id="search-navbar"
-            class="block lg:hidden w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 mx-auto lg:mx-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
+            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0 lg:hidden"
             placeholder="Search..."
           />
           <div class="relative hidden md:block xl:ml-[7rem]">
@@ -125,13 +125,13 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 mx-auto lg:mx-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
+              class="mx-auto block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0"
               placeholder="Search..."
             />
           </div>
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col text-center space-y-4 lg:space-y-0 text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium xl:text-white xl:text-[14px]"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
@@ -182,7 +182,7 @@
 
     <main>
       <section
-        class="heroIndex mt-12 flex h-auto items-center justify-center md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:h-full xl:mt-0 2xl:mt-0 bg-kategoriHero mt-0"
+        class="heroIndex bg-kategoriHero mt-12 mt-0 flex h-auto items-center justify-center md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:mt-0 xl:h-full 2xl:mt-0"
       >
         <img
           loading="lazy"
@@ -194,11 +194,11 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-6 md:px-14 xl:px-[7rem] xl:pb-[5rem] xl:mt-0 pb-[5rem]"
+          class="container-kategori mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:pb-[5rem]"
         >
           <div class="wrapper-kategori relative z-0">
             <nav
-              class="flex items-center justify-around sm:justify-start xl:flex-row border-b-4 border-primary xl:pb-[1rem] xl:pt-[5rem] pt-[5rem] pb-[1rem]"
+              class="border-primary flex items-center justify-around border-b-4 pt-[5rem] pb-[1rem] sm:justify-start xl:flex-row xl:pb-[1rem] xl:pt-[5rem]"
             >
               <div
                 class="menu flex items-center justify-center text-[1.7rem] xl:mr-10"
@@ -238,15 +238,15 @@
             </nav>
             <div class="content flex flex-col">
               <div
-                class="content-type text-primary mr-3 text-[24px] font-bold mt-[3rem]"
+                class="content-type text-primary mr-3 mt-[3rem] text-[24px] font-bold"
               >
                 <h3>ACTUATOR</h3>
               </div>
               <div
-                class="kategori-list mt-10 flex flex-wrap justify-evenly gap-4 lg:justify-evenly xl:gap-[2rem] 2xl:gap-0"
+                class="kategori-list mt-10 flex flex-wrap justify-evenly gap-4 lg:justify-evenly xl:gap-[2rem] 2xl:gap-y-12"
               >
                 <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[16rem]"
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-auto 2xl:max-w-[16rem]"
                 >
                   <a href="#">
                     <img
@@ -265,7 +265,7 @@
                     </div>
                     <a href="#">
                       <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
                         data-translatable
                       >
                         <span>Nama Produk</span>
@@ -280,18 +280,18 @@
                     </p>
                     <div class="sale-price flex flex-col">
                       <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
                       >
                         Rp. 4.xxx.xxx
                       </p>
                       <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
                       >
                         Rp. 5,685,000
                       </p>
                     </div>
                     <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
                       data-translatable
                     >
                       <span>50%</span>
@@ -300,7 +300,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[16rem]"
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-auto 2xl:max-w-[16rem]"
                 >
                   <a href="#">
                     <img
@@ -319,7 +319,7 @@
                     </div>
                     <a href="#">
                       <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
                         data-translatable
                       >
                         <span>Nama Produk</span>
@@ -334,18 +334,18 @@
                     </p>
                     <div class="sale-price flex flex-col">
                       <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
                       >
                         Rp. 4.xxx.xxx
                       </p>
                       <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
                       >
                         Rp. 5,685,000
                       </p>
                     </div>
                     <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
                       data-translatable
                     >
                       <span>50%</span>
@@ -354,7 +354,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[16rem]"
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-auto 2xl:max-w-[16rem]"
                 >
                   <a href="#">
                     <img
@@ -373,7 +373,7 @@
                     </div>
                     <a href="#">
                       <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
                         data-translatable
                       >
                         <span>Nama Produk</span>
@@ -388,18 +388,18 @@
                     </p>
                     <div class="sale-price flex flex-col">
                       <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
                       >
                         Rp. 4.xxx.xxx
                       </p>
                       <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
                       >
                         Rp. 5,685,000
                       </p>
                     </div>
                     <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
                       data-translatable
                     >
                       <span>50%</span>
@@ -408,7 +408,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[16rem]"
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-auto 2xl:max-w-[16rem]"
                 >
                   <a href="#">
                     <img
@@ -427,7 +427,7 @@
                     </div>
                     <a href="#">
                       <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
                         data-translatable
                       >
                         <span>Nama Produk</span>
@@ -442,18 +442,18 @@
                     </p>
                     <div class="sale-price flex flex-col">
                       <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
                       >
                         Rp. 4.xxx.xxx
                       </p>
                       <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
                       >
                         Rp. 5,685,000
                       </p>
                     </div>
                     <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
                       data-translatable
                     >
                       <span>50%</span>
@@ -462,277 +462,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-auto 2xl:max-w-[16rem]"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
-                      src="./../assets/produk-laris.webp"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2 xl:p-3">
-                    <div
-                      class="ml-8 inline items-center rounded-lg bg-green-500 py-[0.3rem] px-[0.5rem] px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
-                      data-translatable
-                    >
-                      <span>Stock Tersedia</span>
-                      <span>Stock Available</span>
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
-                        data-translatable
-                      >
-                        <span>Nama Produk</span>
-                        <span>Product Name</span>
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
-                    >
-                      <span>Keterangan singkat produk</span>
-                      <span>Product brief</span>
-                    </p>
-                    <div class="sale-price flex flex-col">
-                      <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
-                      >
-                        Rp. 4.xxx.xxx
-                      </p>
-                      <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
-                      >
-                        Rp. 5,685,000
-                      </p>
-                    </div>
-                    <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
-                      data-translatable
-                    >
-                      <span>50%</span>
-                      <span>8% Off</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-full 2xl:max-w-[16rem] 2xl:mt-16"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
-                      src="./../assets/produk-laris.webp"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2 xl:p-3">
-                    <div
-                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
-                      data-translatable
-                    >
-                      <span>Stock Kosong</span>
-                      <span>Empty Stock</span>
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
-                        data-translatable
-                      >
-                        <span>Nama Produk</span>
-                        <span>Product Name</span>
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
-                    >
-                      <span>Keterangan singkat produk</span>
-                      <span>Product brief</span>
-                    </p>
-                    <div class="sale-price flex flex-col">
-                      <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
-                      >
-                        Rp. 4.xxx.xxx
-                      </p>
-                      <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
-                      >
-                        Rp. 5,685,000
-                      </p>
-                    </div>
-                    <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
-                      data-translatable
-                    >
-                      <span>50%</span>
-                      <span>8% Off</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-full 2xl:max-w-[16rem] 2xl:mt-16"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
-                      src="./../assets/produk-laris.webp"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2 xl:p-3">
-                    <div
-                      class="ml-8 inline items-center rounded-lg bg-green-500 py-[0.3rem] px-[0.5rem] px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
-                      data-translatable
-                    >
-                      <span>Stock Kosong</span>
-                      <span>Stock Available</span>
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
-                        data-translatable
-                      >
-                        <span>Nama Produk</span>
-                        <span>Product Name</span>
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
-                    >
-                      <span>Keterangan singkat produk</span>
-                      <span>Product brief</span>
-                    </p>
-                    <div class="sale-price flex flex-col">
-                      <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
-                      >
-                        Rp. 4.xxx.xxx
-                      </p>
-                      <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
-                      >
-                        Rp. 5,685,000
-                      </p>
-                    </div>
-                    <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
-                      data-translatable
-                    >
-                      <span>50%</span>
-                      <span>8% Off</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-full 2xl:max-w-[16rem] 2xl:mt-16"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
-                      src="./../assets/produk-laris.webp"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2 xl:p-3">
-                    <div
-                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
-                      data-translatable
-                    >
-                      <span>Stock Kosong</span>
-                      <span>Empty Stock</span>
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
-                        data-translatable
-                      >
-                        <span>Nama Produk</span>
-                        <span>Product Name</span>
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
-                    >
-                      <span>Keterangan singkat produk</span>
-                      <span>Product brief</span>
-                    </p>
-                    <div class="sale-price flex flex-col">
-                      <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
-                      >
-                        Rp. 4.xxx.xxx
-                      </p>
-                      <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
-                      >
-                        Rp. 5,685,000
-                      </p>
-                    </div>
-                    <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
-                      data-translatable
-                    >
-                      <span>50%</span>
-                      <span>8% Off</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-full 2xl:max-w-[16rem] 2xl:mt-16"
-                >
-                  <a href="#">
-                    <img
-                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
-                      src="./../assets/produk-laris.webp"
-                      alt=""
-                    />
-                  </a>
-                  <div class="p-2 xl:p-3">
-                    <div
-                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
-                      data-translatable
-                    >
-                      <span>Stock Kosong</span>
-                      <span>Empty Stock</span>
-                    </div>
-                    <a href="#">
-                      <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
-                        data-translatable
-                      >
-                        <span>Nama Produk</span>
-                        <span>Product Name</span>
-                      </h5>
-                    </a>
-                    <p
-                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
-                    >
-                      <span>Keterangan singkat produk</span>
-                      <span>Product brief</span>
-                    </p>
-                    <div class="sale-price flex flex-col">
-                      <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
-                      >
-                        Rp. 4.xxx.xxx
-                      </p>
-                      <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
-                      >
-                        Rp. 5,685,000
-                      </p>
-                    </div>
-                    <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
-                      data-translatable
-                    >
-                      <span>50%</span>
-                      <span>8% Off</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] xl:h-full lg:max-w-[13rem] 2xl:h-full 2xl:max-w-[16rem] 2xl:mt-16"
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-auto 2xl:max-w-[16rem]"
                 >
                   <a href="#">
                     <img
@@ -751,7 +481,7 @@
                     </div>
                     <a href="#">
                       <h5
-                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] xl:mt-5 lg:text-base 2xl:text-lg"
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
                         data-translatable
                       >
                         <span>Nama Produk</span>
@@ -766,18 +496,288 @@
                     </p>
                     <div class="sale-price flex flex-col">
                       <p
-                        class="text-[#4a4e5a] text-[12px] line-through opacity-50"
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
                       >
                         Rp. 4.xxx.xxx
                       </p>
                       <p
-                        class="mb-0 text-[16px] text-primary font-bold lg:text-[16px] xl:mb-0"
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
                       >
                         Rp. 5,685,000
                       </p>
                     </div>
                     <div
-                      class="absolute right-[10px] top-[-5px] xl:top-[-10px] z-[2] items-center rounded-b-full bg-red-600 pt-0 pb-1 px-2 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] w-[3rem] h-[2rem] xl:w-[5rem] xl:h-[3rem] flex justify-center"
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
+                      data-translatable
+                    >
+                      <span>50%</span>
+                      <span>8% Off</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-full 2xl:max-w-[16rem]"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
+                      src="./../assets/produk-laris.webp"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-2 xl:p-3">
+                    <div
+                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
+                      data-translatable
+                    >
+                      <span>Stock Kosong</span>
+                      <span>Empty Stock</span>
+                    </div>
+                    <a href="#">
+                      <h5
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
+                        data-translatable
+                      >
+                        <span>Nama Produk</span>
+                        <span>Product Name</span>
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
+                    >
+                      <span>Keterangan singkat produk</span>
+                      <span>Product brief</span>
+                    </p>
+                    <div class="sale-price flex flex-col">
+                      <p
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
+                      >
+                        Rp. 4.xxx.xxx
+                      </p>
+                      <p
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
+                      >
+                        Rp. 5,685,000
+                      </p>
+                    </div>
+                    <div
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
+                      data-translatable
+                    >
+                      <span>50%</span>
+                      <span>8% Off</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-full 2xl:max-w-[16rem]"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
+                      src="./../assets/produk-laris.webp"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-2 xl:p-3">
+                    <div
+                      class="ml-8 inline items-center rounded-lg bg-green-500 py-[0.3rem] px-[0.5rem] px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
+                      data-translatable
+                    >
+                      <span>Stock Kosong</span>
+                      <span>Stock Available</span>
+                    </div>
+                    <a href="#">
+                      <h5
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
+                        data-translatable
+                      >
+                        <span>Nama Produk</span>
+                        <span>Product Name</span>
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
+                    >
+                      <span>Keterangan singkat produk</span>
+                      <span>Product brief</span>
+                    </p>
+                    <div class="sale-price flex flex-col">
+                      <p
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
+                      >
+                        Rp. 4.xxx.xxx
+                      </p>
+                      <p
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
+                      >
+                        Rp. 5,685,000
+                      </p>
+                    </div>
+                    <div
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
+                      data-translatable
+                    >
+                      <span>50%</span>
+                      <span>8% Off</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-full 2xl:max-w-[16rem]"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
+                      src="./../assets/produk-laris.webp"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-2 xl:p-3">
+                    <div
+                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
+                      data-translatable
+                    >
+                      <span>Stock Kosong</span>
+                      <span>Empty Stock</span>
+                    </div>
+                    <a href="#">
+                      <h5
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
+                        data-translatable
+                      >
+                        <span>Nama Produk</span>
+                        <span>Product Name</span>
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
+                    >
+                      <span>Keterangan singkat produk</span>
+                      <span>Product brief</span>
+                    </p>
+                    <div class="sale-price flex flex-col">
+                      <p
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
+                      >
+                        Rp. 4.xxx.xxx
+                      </p>
+                      <p
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
+                      >
+                        Rp. 5,685,000
+                      </p>
+                    </div>
+                    <div
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
+                      data-translatable
+                    >
+                      <span>50%</span>
+                      <span>8% Off</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-full 2xl:max-w-[16rem]"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
+                      src="./../assets/produk-laris.webp"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-2 xl:p-3">
+                    <div
+                      class="ml-8 inline items-center rounded-lg bg-gray-500 py-[0.3rem] px-[0.5rem] text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
+                      data-translatable
+                    >
+                      <span>Stock Kosong</span>
+                      <span>Empty Stock</span>
+                    </div>
+                    <a href="#">
+                      <h5
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
+                        data-translatable
+                      >
+                        <span>Nama Produk</span>
+                        <span>Product Name</span>
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
+                    >
+                      <span>Keterangan singkat produk</span>
+                      <span>Product brief</span>
+                    </p>
+                    <div class="sale-price flex flex-col">
+                      <p
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
+                      >
+                        Rp. 4.xxx.xxx
+                      </p>
+                      <p
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
+                      >
+                        Rp. 5,685,000
+                      </p>
+                    </div>
+                    <div
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
+                      data-translatable
+                    >
+                      <span>50%</span>
+                      <span>8% Off</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="relative z-[12] h-full max-w-[9rem] rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 lg:h-[23.5rem] lg:max-w-[13rem] xl:h-full 2xl:h-full 2xl:max-w-[16rem]"
+                >
+                  <a href="#">
+                    <img
+                      class="rounded-t-lg xl:h-[9rem] xl:w-[13rem] 2xl:w-[16rem]"
+                      src="./../assets/produk-laris.webp"
+                      alt=""
+                    />
+                  </a>
+                  <div class="p-2 xl:p-3">
+                    <div
+                      class="ml-8 inline items-center rounded-lg bg-green-500 py-[0.3rem] px-[0.5rem] px-3 text-center text-[10px] font-medium text-white sm:ml-[0rem] md:ml-[1rem] lg:ml-[4rem] lg:px-2 lg:text-[12px] xl:ml-[5rem] xl:py-1 2xl:ml-[6rem] 2xl:text-base"
+                      data-translatable
+                    >
+                      <span>Stock Tersedia</span>
+                      <span>Stock Available</span>
+                    </div>
+                    <a href="#">
+                      <h5
+                        class="mb-2 mt-5 text-xs font-bold tracking-tight text-[#4a4e5a] lg:text-base xl:mt-5 2xl:text-lg"
+                        data-translatable
+                      >
+                        <span>Nama Produk</span>
+                        <span>Product Name</span>
+                      </h5>
+                    </a>
+                    <p
+                      class="mb-3 text-[11px] font-normal text-gray-700 dark:text-gray-400 lg:text-sm 2xl:text-base"
+                    >
+                      <span>Keterangan singkat produk</span>
+                      <span>Product brief</span>
+                    </p>
+                    <div class="sale-price flex flex-col">
+                      <p
+                        class="text-[12px] text-[#4a4e5a] line-through opacity-50"
+                      >
+                        Rp. 4.xxx.xxx
+                      </p>
+                      <p
+                        class="text-primary mb-0 text-[16px] font-bold lg:text-[16px] xl:mb-0"
+                      >
+                        Rp. 5,685,000
+                      </p>
+                    </div>
+                    <div
+                      class="absolute right-[10px] top-[-5px] z-[2] flex h-[2rem] w-[3rem] items-center justify-center rounded-b-full bg-red-600 px-2 pt-0 pb-1 text-center text-[10px] font-medium text-yellow-200 lg:text-[20px] xl:top-[-10px] xl:h-[3rem] xl:w-[5rem]"
                       data-translatable
                     >
                       <span>50%</span>

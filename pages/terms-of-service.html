@@ -22,10 +22,10 @@
   <body>
     <nav
       id="navbar"
-      class="bg-white xl:bg-transparent px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]"
+      class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
     >
       <div
-        class="container relative z-10 mx-auto flex flex-nowrap xl:flex-wrap items-center justify-between"
+        class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
       >
         <a href="#" class="flex items-center">
           <img
@@ -39,7 +39,7 @@
           <input
             type="text"
             id="search-navbar"
-            class="block lg:hidden w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 mx-auto lg:mx-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
+            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0 lg:hidden"
             placeholder="Search..."
           />
           <div class="relative hidden md:block xl:ml-[7rem]">
@@ -125,13 +125,13 @@
             <input
               type="text"
               id="search-navbar"
-              class="block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 mx-auto lg:mx-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full"
+              class="mx-auto block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0"
               placeholder="Search..."
             />
           </div>
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col text-center space-y-4 lg:space-y-0 text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium xl:text-white xl:text-[14px]"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
@@ -182,7 +182,7 @@
 
     <main>
       <section
-        class="heroIndex mt-12 flex h-auto items-center justify-center md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:h-full xl:mt-0 2xl:mt-0 bg-white"
+        class="heroIndex mt-12 flex h-auto items-center justify-center bg-white md:mt-[7rem] lg:-mt-32 lg:h-[50rem] xl:mt-0 xl:h-full 2xl:mt-0"
       >
         <img
           loading="lazy"
@@ -194,39 +194,229 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-6 md:px-14 xl:px-[7rem] xl:pb-[5rem] xl:mt-0 pb-[5rem]"
+          class="container-kategori mt-0 px-6 pb-[5rem] md:px-14 xl:mt-0 xl:px-[7rem] xl:pb-[5rem] 2xl:px-48"
         >
           <div class="wrapper-kategori relative z-0 xl:mt-[7rem]">
             <div
-              class="tos-navbar flex font-bold text-primary text-[20px] justify-between xl:w-[65rem]"
+              class="tos-navbar text-primary flex justify-between text-[1.5rem] font-bold xl:w-[85rem] 2xl:w-auto"
             >
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="">
-                  <h1 class="pr-3">TENTANG KAMI</h1>
+                  <h1 class="mr-12">TENTANG KAMI</h1>
                 </a>
               </div>
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="">
-                  <h1 class="pr-3">KONTAK KAMI</h1>
+                  <h1 class="mr-12">KONTAK KAMI</h1>
                 </a>
               </div>
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="">
-                  <h1 class="pr-3">SYARAT DAN KETENTUAN</h1>
+                  <h1 class="mr-12">SYARAT DAN KETENTUAN</h1>
                 </a>
               </div>
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="">
-                  <h1 class="pr-3">PRIVACY & POLICY</h1>
+                  <h1 class="mr-12">PRIVACY & POLICY</h1>
                 </a>
               </div>
               <div class="tentang-kami border-r-4 border-[#fecdbb]">
                 <a href="">
-                  <h1 class="pr-3">TERMS OF SERVICE</h1>
+                  <h1 class="mr-12">TERMS OF SERVICE</h1>
                   <div
-                    class="w-0 hover:w-[95%] h-0 hover:h-1 bg-[#fecdbb]"
+                    class="h-0 w-0 bg-[#fecdbb] hover:h-1 hover:w-[95%]"
                   ></div>
                 </a>
+              </div>
+            </div>
+
+            <div class="tos-content font-bold text-[#4a4e5a] 2xl:mt-28">
+              <h2 class="text-center text-[2rem]">TERMS OF SERVICE</h2>
+              <p class="text-[1.5rem] 2xl:mt-7 2xl:px-10">
+                Please read the terms in full before you use this Website. If
+                you do not accept these terms, please do not use this Website.
+                Continue using the Website implies that you accept these terms.
+                We do occasionally update these terms so please refer back to
+                them in the future.
+              </p>
+              <p class="text-[1.5rem] 2xl:mt-7 2xl:px-10">
+                The term 'YourOnlineStore' or 'us' or 'we' refers to the owner
+                of the website. The term 'you' refers to the user or viewer of
+                our website
+              </p>
+              <div
+                class="tos-privacy rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Privacy</h3>
+                <p>
+                  Please review our Privacy Notice, which also governs your
+                  visit to our website, to understand our practices.
+                </p>
+              </div>
+              <div
+                class="tos-copyright rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Copyright</h3>
+                <p>
+                  All content included on this site, such as text, graphics,
+                  logos, button icons, images, audio clips, digital downloads,
+                  data compilations, and software, is the property of
+                  YourOnlineStore or its content suppliers and protected by
+                  international copyright laws. The compilation of all content
+                  on this site is the exclusive property of YourOnlineStore,
+                  with copyright authorship for this collection by
+                  YourOnlineStore, and protected by international copyright
+                  laws.
+                </p>
+              </div>
+              <div
+                class="tos-tradeMarks rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Trade Marks</h3>
+                <p>
+                  YourOnlineStore trademarks and trade dress may not be used in
+                  connection with any product or service that is not
+                  YourOnlineStore, in any manner that is likely to cause
+                  confusion among customers, or in any manner that disparages or
+                  discredits YourOnlineStore. All other trademarks not owned by
+                  YourOnlineStore or its subsidiaries that appear on this site
+                  are the property of their respective owners, who may or may
+                  not be affiliated with, connected to, or sponsored by
+                  YourOnlineStore or its subsidiaries.
+                </p>
+              </div>
+              <div
+                class="tos-license rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>License And Site Access</h3>
+                <p>
+                  YourOnlineStore grants you a limited license to access and
+                  make personal use of this site. You may copy information from
+                  this Website only as necessary for your personal use to (a)
+                  view, (b) save, and (c) print, or (d) e-mail it. You are
+                  granted a limited, revocable, and nonex-clusive right to
+                  create a hyperlink to the home page of YourOnlineStore so long
+                  as the link does not portray YourOnlineStore, its associ-ates,
+                  or their products or services in a false, misleading,
+                  derogatory, or otherwise offensive matter. You may not use any
+                  YourOnlineStore logo or other proprietary graphic or trademark
+                  as part of the link without express written permission. You
+                  agree otherwise not to repro-duce, modify, distribute,
+                  decompile, disassemble or reverse engineer any portion of this
+                  Website. You further agree that You will not use this Website
+                  to do any of the following (“Activities”):
+                </p>
+                <p>
+                  Attempt to gain unauthorized access to this Website, other
+                  accounts, computer systems or networks connected to this
+                  Website, through password mining or any other means
+                  Impersonate any person or entity, including, but not limited
+                  to, a Company representative or employee, or falsely state or
+                  otherwise misrepresent Your affiliation with a person or
+                  entity Take any action that imposes an unreasonably or
+                  disproportionately large load on this Website infrastructure
+                  Intentionally or unintentionally violate any applicable local,
+                  national or international law
+                </p>
+              </div>
+              <div
+                class="tos-validity rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Validity Of Website Content</h3>
+                <p>
+                  We take all reasonable steps to ensure that the information on
+                  this Website is correct. However, we do not guarantee the
+                  correctness or completeness of material on this Website. We
+                  may make changes to the material on this Website at any time
+                  and without notice.
+                </p>
+              </div>
+              <div
+                class="tos-external rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>External Links</h3>
+                <p>
+                  This Website may contain links to other sites on the Internet
+                  that are owned and operated by third party vendors and other
+                  third parties (the 'External Links'). Since we do not possess
+                  any control over such sites and resources, you acknowledge and
+                  agree that we will not be held responsible for the
+                  availability of such external sites or resources, and do not
+                  endorse and are not responsible or liable for any content,
+                  advertising, products or other materials on or available from
+                  such sites or resources. You further acknowledge and agree
+                  that we shall not be responsible or liable, directly or
+                  indirectly, for any damage or loss caused or alleged to be
+                  caused by or in connection with use of or reliance on any such
+                  content, goods or services available on or through any such
+                  site or resource.
+                </p>
+                <p>
+                  DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY THIS SITE
+                  IS PROVIDED BY YOURONLINESTORE ON AN 'AS IS' AND 'AS
+                  AVAILABLE' BASIS. YOURONLINESTORE MAKES NO REPRESENTATIONS OR
+                  WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE
+                  OPERATION OF THIS SITE OR THE INFORMATION, CONTENT, MATERIALS,
+                  OR PRODUCTS INCLUDED ON THIS SITE. YOU EXPRESSLY AGREE THAT
+                  YOUR USE OF THIS SITE IS AT YOUR SOLE RISK. YOURONLINESTORE
+                  DOES NOT WARRANT THAT THIS WEBSITE AND/OR ITS SERVICES WILL BE
+                  UNINTERRUPTED, TIMELY, SECURE, OR ERROR FRE
+                </p>
+              </div>
+              <div
+                class="tos-limitation rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Limitation Of Liability</h3>
+                <p>
+                  We take all reasonable steps to ensure that the information on
+                  this Website is correct. However, we do not guarantee the
+                  correctness or completeness of material on this Website. We
+                  may make changes to the material on this Website at any time
+                  and without notice.
+                </p>
+              </div>
+              <div
+                class="tos-limitation2 rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Limitation Of Liability</h3>
+                <p>
+                  You understand that to the extent permitted under applicable
+                  law, in no event will or its officers, employees, directors,
+                  shareholders, parents, subsidiaries, affiliates, agents or
+                  licensors be liable for any direct, indirect, incidental,
+                  special, consequential or exemplary damages, including but not
+                  limited to, damages for loss of revenues, profits, goodwill,
+                  use, data or other intangible losses (even if such parties
+                  were advised or, knew of or should have known of the
+                  possibility of such damages), resulting from your use of this
+                  Website and/or Services.
+                </p>
+              </div>
+              <div
+                class="tos-exclusions rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Exclusions And Limitations</h3>
+                <p>
+                  Some jurisdictions do not allow the exclusion of certain
+                  warranties or the limitation or exclusion of liability for
+                  incidental or consequential damages. Accordingly, some of the
+                  above limitations and disclaimers may not apply to you. To the
+                  extent that we may not, as a matter of applicable law,
+                  disclaim any implied warranty or limit its liabilities, the
+                  scope and duration of such warranty and the extent of
+                  YourOnlineStore's liability shall be the minimum permitted
+                  under such applicable law
+                </p>
+              </div>
+              <div
+                class="tos-Questions rounded-xl bg-[#fecdbb] text-[1.5rem] 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
+              >
+                <h3>Questions</h3>
+                <p>
+                  Questions regarding our Conditions of Usage, Privacy Policy,
+                  or other policy related material can be directed to our
+                  support staff by emailing us at: info@yo
+                </p>
               </div>
             </div>
           </div>
@@ -238,7 +428,7 @@
       class="border-primary mb-0 h-full border-t-[15px] bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0"
     >
       <div
-        class="container mx-auto mt-12 flex h-[30rem] flex-col xl:flex-row justify-start xl:h-[18rem]"
+        class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:h-[18rem] xl:flex-row"
       >
         <div
           class="slogan flex h-[12rem] flex-col items-start justify-center font-bold text-[#4a4e5a] xl:h-auto xl:flex-col xl:items-center xl:justify-evenly"
@@ -250,7 +440,7 @@
               alt=""
               srcset=""
             />
-            <h6 class="xl:ml-5 font-normal">
+            <h6 class="font-normal xl:ml-5">
               Burnerindo.com adalah sebuah layanan e-commerce yang dibuat dan
               dikelola oleh PT. Burnerindo Teknik Utama, sebagai salah satu
               strategi pemasaran online sehingga memudahkan customer/ member
@@ -258,7 +448,7 @@
               efektif dan efisien
             </h6>
           </div>
-          <div class="footer-menu flex xl:justify-around w-full">
+          <div class="footer-menu flex w-full xl:justify-around">
             <h6 class="text-black">TERMS OF USE</h6>
             <div class="footer-tentangKami">
               <h6 class="text-black">TENTANG KAMI</h6>
@@ -269,8 +459,8 @@
             <h6 class="text-black">SYARAT DAN KETENTUAN</h6>
           </div>
         </div>
-        <div class="subscribe mt-10 flex flex-col self-baseline space-y-3">
-          <h6 class="text-gray-600 font-bold">TEMUKAN KAMI</h6>
+        <div class="subscribe mt-10 flex flex-col space-y-3 self-baseline">
+          <h6 class="font-bold text-gray-600">TEMUKAN KAMI</h6>
           <div class="icon-menu">
             <button
               class="instagram bg-primary h-8 w-8 rounded-full text-white shadow-2xl xl:h-8 xl:w-8 2xl:h-12 2xl:w-12"
@@ -327,142 +517,142 @@
     <footer class="px-6 md:px-14">
       <div class="container mx-auto mt-12 h-[30rem] w-full xl:h-[23rem]">
         <div
-          class="footer-brands pb-12 bg-white flex flex-col justify-between h-full"
+          class="footer-brands flex h-full flex-col justify-between bg-white pb-12"
         >
-          <div class="brands__brand w-[100%] flex justify-between">
+          <div class="brands__brand flex w-[100%] justify-between">
             <div class="brands-copyright space-y-5">
-              <div class="brands-partner xl:w-[50rem] flex flex-col">
+              <div class="brands-partner flex flex-col xl:w-[50rem]">
                 <h6 class="font-bold text-[#4a4e5a] xl:mb-3">BRAND PARTNER</h6>
                 <div class="footer-brand__brand flex justify-between">
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand1.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand2.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand3.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand4.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand5.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand6.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand7.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand8.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[85px] h-[40px]"
+                    class="h-[40px] w-[85px]"
                     src="./../assets/brand9.webp"
                     alt=""
                     srcset=""
                   />
                 </div>
               </div>
-              <div class="metode-pembayaran xl:w-[50rem] flex flex-col">
+              <div class="metode-pembayaran flex flex-col xl:w-[50rem]">
                 <h6 class="font-bold text-[#4a4e5a] xl:mb-3">
                   METODE PEMBAYARAN
                 </h6>
                 <div class="payment flex justify-between">
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/bca.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/bii.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/bni.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/bri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/dbs.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/indodana.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/kredivo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/mandiri.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/mastercard.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/ovo.webp"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/permata.png"
                     alt=""
                     srcset=""
                   />
                   <img
-                    class="w-[50px] h-[30px]"
+                    class="h-[30px] w-[50px]"
                     src="./../assets/footer/visa.webp"
                     alt=""
                     srcset=""
@@ -470,21 +660,21 @@
                 </div>
               </div>
             </div>
-            <div class="brands-secure flex items-end justify-between w-[13rem]">
+            <div class="brands-secure flex w-[13rem] items-end justify-between">
               <img
-                class="w-[60px] h-[50px]"
+                class="h-[50px] w-[60px]"
                 src="./../assets/footer/secure-web.webp"
                 alt=""
                 srcset=""
               />
               <img
-                class="w-[60px] h-[50px]"
+                class="h-[50px] w-[60px]"
                 src="./../assets/footer/secure-ssl.webp"
                 alt=""
                 srcset=""
               />
               <img
-                class="w-[60px] h-[50px]"
+                class="h-[50px] w-[60px]"
                 src="./../assets/footer/secure-payment.webp"
                 alt=""
                 srcset=""
