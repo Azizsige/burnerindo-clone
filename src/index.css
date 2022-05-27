@@ -57,6 +57,9 @@
   .fas::before {
     font-size: 24px !important;
   }
+  .fas.fa-map-marker-alt::before {
+    font-size: 17px !important;
+  }
 
   .fas.fas-xs::before {
     font-size: 13px !important;
