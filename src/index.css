@@ -110,6 +110,9 @@
   .marquee {
     overflow: hidden;
   }
+  #buttonAccor1[aria-expanded="true"] {
+    @apply bg-[#fecdbb];
+  }
 
   html {
     scroll-behavior: smooth !important;
