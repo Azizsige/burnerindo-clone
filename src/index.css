@@ -159,6 +159,12 @@
     .fas::before {
       font-size: 14px !important;
     }
+
+    .fas.marker-content.fa-map-marker-alt::before,
+    .fa-phone-alt::before,
+    .fa-envelope.envelope-content::before {
+      font-size: 25px !important;
+    }
   }
 
   @media (min-width: 1536px) {
