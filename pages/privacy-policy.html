@@ -67,13 +67,73 @@
             />
             <div
               id="showMenu"
-              class="list-menus absolute left-0 right-0 hidden rounded-xl bg-white pl-10"
+              class="list-menus text-black absolute overflow-y-scroll left-0 shadow-2xl h-[15rem] space-y-5 hidden w-[25rem] right-0 rounded-xl bg-white"
             >
-              <li id="menuText"></li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
-              <li>Hello</li>
+              <div
+                class="search-1 pl-10 flex justify-between items-center border border-b-gray-500"
+              >
+                <div class="search-text">
+                  <p><span id="listText"></span> MERK BARANG</p>
+                  <p>kode</p>
+                  <div class="search-price">
+                    <b>Rp 1.000.000</b>
+                    <b>Rp 600.000</b>
+                  </div>
+                  <div>Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./../assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div class="search-1 pl-10 flex justify-between items-center">
+                <div class="search-text">
+                  <p><span id="listText"></span> MERK BARANG</p>
+                  <p>kode</p>
+                  <div class="search-price">
+                    <b>Rp 1.000.000</b>
+                    <b>Rp 600.000</b>
+                  </div>
+                  <div>Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./../assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div class="search-1 pl-10 flex justify-between items-center">
+                <div class="search-text">
+                  <p><span id="listText"></span> MERK BARANG</p>
+                  <p>kode</p>
+                  <div class="search-price">
+                    <b>Rp 1.000.000</b>
+                    <b>Rp 600.000</b>
+                  </div>
+                  <div>Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./../assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              id="showLoading"
+              class="list-menus text-black absolute left-0 shadow-2xl h-[4rem] hidden justify-start right-0 items-center rounded-xl bg-white pl-10"
+            >
+              <li id="listLoading" class="list-none text-xl">Loading . . .</li>
             </div>
           </div>
           <button
@@ -834,11 +894,54 @@
     <script>
       let searchNav = document.getElementById("searchNavbar");
       let showMenu = document.getElementById("showMenu");
+      let listText = document.getElementById("listText");
+      let showLoading = document.getElementById("showLoading");
       console.log(searchNav);
+
+      searchNav.addEventListener("focus", function () {
+        // alert("Focusss");
+        showLoading.classList.remove("remove");
+      });
+
       searchNav.addEventListener("keyup", function () {
         console.log(searchNav.value);
-        showMenu.classList.remove("hidden");
+        if (searchNav.value != "") {
+          showMenu.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoading.classList.remove("flex");
+          showLoading.classList.add("hidden");
+
+          listText.innerText = searchNav.value;
+        } else {
+          showMenu.classList.add("hidden");
+          showLoading.classList.remove("hidden");
+          showLoading.classList.add("flex");
+        }
       });
+
+      searchNav.addEventListener("blur", function (e) {
+        showMenu.classList.add("hidden");
+        showLoading.classList.add("hidden");
+        e.preventDefault();
+        e.stopPropagation();
+      });
+      searchNav.addEventListener("focus", function () {
+        if (searchNav.value != "") {
+          showMenu.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoading.classList.remove("flex");
+          showLoading.classList.add("hidden");
+
+          listText.innerText = searchNav.value;
+        } else {
+          showMenu.classList.add("hidden");
+          showLoading.classList.remove("hidden");
+          showLoading.classList.add("flex");
+        }
+        // showLoading.classList.remove("hidden");
+        // showLoading.classList.add("flex");
+      });
+
       window.onscroll = function () {
         const header = document.getElementById("navbar");
         let showMenu = document.getElementById("showMenu");
