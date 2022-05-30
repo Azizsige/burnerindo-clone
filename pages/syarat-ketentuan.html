@@ -42,7 +42,7 @@
             class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mr-16 xl:hidden"
             placeholder="Search..."
           />
-          <div class="relative hidden xl:block xl:ml-[7rem]">
+          <div class="relative hidden xl:ml-[7rem] xl:block">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
             >
@@ -69,7 +69,7 @@
           <button
             id="btnHamburger"
             type="button"
-            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:hidden xl:ml-[1.9rem]"
+            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:ml-[1.9rem] xl:hidden"
             aria-controls="mobile-menu-3"
             aria-expanded="false"
           >
@@ -102,7 +102,7 @@
         </div>
         <div
           id="sidebar"
-          class="transitioin-all absolute md:flex-col xl:flex-row left-[-100%] top-[4rem] h-screen w-[13rem] items-center md:justify-center xl:justify-between bg-white duration-300 ease-in-out xl:static md:top-0 md:order-2 md:flex md:h-screen xl:h-auto md:w-[70%] xl:w-auto xl:bg-transparent md:space-y-5 xl:space-y-0 md:shadow-2xl"
+          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
           id="mobile-menu-3"
         >
           <div class="relative mt-3 xl:hidden">
@@ -131,7 +131,7 @@
           </div>
           <ul
             id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 xl:flex-row md:items-center xl:space-x-8 md:font-medium lg:space-y-5 xl:space-y-0 xl:text-[14px] xl:text-white md:w-full xl:w-auto"
+            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
           >
             <li>
               <a
@@ -194,11 +194,11 @@
 
         <div
           id="shopNow"
-          class="container-kategori mt-0 px-[0.5rem] pb-[5rem] lg:mt-0 md:px-14 xl:mt-0 xl:px-[7rem] xl:pb-[5rem] 2xl:px-48"
+          class="container-kategori mt-0 px-[0.5rem] pb-[5rem] md:px-14 lg:mt-0 xl:mt-0 xl:px-[7rem] xl:pb-[5rem] 2xl:px-48"
         >
           <div class="wrapper-kategori relative z-0 mt-8 xl:mt-[7rem]">
             <div
-              class="tos-navbar text-primary xl:space-y-10 2xl:space-y-0 flex flex-wrap 2xl:space-x-5 2xl:text-[1.3rem] 2xl:flex-nowrap justify-evenly space-y-5 text-[14px] font-bold xl:w-auto xl:justify-between xl:text-[1.5rem] 2xl:w-auto"
+              class="tos-navbar text-primary flex flex-wrap justify-evenly space-y-5 text-[14px] font-bold xl:w-auto xl:justify-between xl:space-y-10 xl:text-[1.5rem] 2xl:w-auto 2xl:flex-nowrap 2xl:space-y-0 2xl:space-x-5 2xl:text-[1.3rem]"
             >
               <div
                 class="tentang-kami mt-5 border-r-4 border-[#fecdbb] xl:mt-10 2xl:mt-0"
@@ -273,85 +273,6 @@
                 <span>TERMS AND CONDITIONS</span>
               </h2>
 
-              <!-- <div
-                class="kontakKami-content flex justify-between items-center space-x-0 xl:space-x-10 text-center xl:items-start xl:flex-grow flex-col xl:flex-row"
-              >
-                <div
-                  class="tos-privacy mt-10 space-y-5 w-[21rem] relative z-[3] h-full rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-                >
-                  <div
-                    target="_blank"
-                    class="message bg-primary flex justify-center absolute z-0 xl:top-[-1.5rem] mx-auto items-center h-8 w-8 rounded-full text-white shadow-2xl xl:h-12 xl:w-12 2xl:h-12 2xl:w-12 xl:left-[9rem] left-[10rem] top-[-1rem]"
-                    type="submit"
-                  >
-                    <i
-                      class="fas fa-map-marker-alt marker-content lg:text-[1rem] xl:text-[1rem]"
-                    ></i>
-                  </div>
-
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    <span
-                      >Lindeteves Trade Center Lt. GF2 Blok C27 No. 9 Jl. Hayam
-                      Wuruk No. 127 Jakarta Indonesia Raya</span
-                    >
-                    <span
-                      >Lindeteves Trade Center Lt. GF2 Block C27 No. 9 Jl. Hayam
-                      Wuruk No. 127 Jakarta Indonesia Raya</span
-                    >
-                  </p>
-                </div>
-                <div
-                  class="tos-privacy mt-10 space-y-5 w-[21rem] relative z-[3] rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-                >
-                  <div
-                    target="_blank"
-                    class="message bg-primary flex justify-center absolute z-0 xl:top-[-1.5rem] mx-auto items-center h-8 w-8 rounded-full text-white shadow-2xl xl:h-12 xl:w-12 2xl:h-12 2xl:w-12 xl:left-[9rem] left-[10rem] top-[-1rem]"
-                    type="submit"
-                  >
-                    <i class="fas fa-phone-alt lg:text-[1rem] xl:text-[1rem]">
-                    </i>
-                  </div>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    021 - 2205 2425
-                  </p>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    0811 - 9199 - 912
-                  </p>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    0811 - 1709 - 123
-                  </p>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    0811 - 8410 - 005
-                  </p>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    0821 - 2309 - 5199 (Ecommerce)
-                  </p>
-                </div>
-                <div
-                  class="tos-privacy mt-10 space-y-5 w-[21rem] relative z-[3] h-full rounded-xl bg-[#fecdbb] py-5 px-5 xl:mt-10 xl:space-y-5 2xl:mt-10 2xl:space-y-5 2xl:py-10 2xl:px-10"
-                >
-                  <div
-                    target="_blank"
-                    class="message bg-primary flex justify-center absolute z-0 xl:top-[-1.5rem] mx-auto items-center h-8 w-8 rounded-full text-white shadow-2xl xl:h-12 xl:w-12 2xl:h-12 2xl:w-12 xl:left-[9rem] left-[10rem] top-[-1rem]"
-                    type="submit"
-                  >
-                    <i
-                      class="far fa-envelope envelope-content lg:text-[1rem] xl:text-[1rem]"
-                    ></i>
-                  </div>
-                  <p class="text-[14px] xl:text-[1rem]" data-translatable>
-                    <span
-                      >btu@cbn.net.id info@youronlinestore.com
-                      support@burnerindo.co.id</span
-                    >
-                    <span
-                      >btu@cbn.net.id info@youronlinestore.com
-                      support@burnerindo.co.id</span
-                    >
-                  </p>
-                </div>
-              </div> -->
-
               <div
                 id="accordion-collapse"
                 data-accordion="collapse"
@@ -361,7 +282,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-1"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-1"
@@ -369,7 +290,7 @@
                     <span>Burnerindo.com</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -384,7 +305,7 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-1"
-                  class="bg-[#fecdbb]"
+                  class="rounded-b-xl bg-[#fecdbb]"
                   aria-labelledby="accordion-collapse-heading-1"
                 >
                   <div class="p-5">
@@ -408,7 +329,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-2"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-2"
@@ -416,7 +337,7 @@
                     <span>Akun</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -431,11 +352,11 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-2"
-                  class="bg-[#fecdbb] pb-10"
+                  class="rounded-b-xl bg-[#fecdbb] pb-10"
                   aria-labelledby="accordion-collapse-heading-2"
                 >
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Mengapa harus pakai akun bertransaksi di burnerindo.com
@@ -451,7 +372,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-2 mt-10 pb-10 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center mx-auto w-[70%]"
+                    class="misson-2 bg-primary mx-auto mt-10 w-[70%] rounded-xl py-5 px-5 pb-10 text-center text-white xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Bagaimana cara membuat akun di burnerindo.com
@@ -477,7 +398,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-3"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-3"
@@ -485,7 +406,7 @@
                     <span>Harga</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -500,7 +421,7 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-3"
-                  class="bg-[#fecdbb]"
+                  class="rounded-b-xl bg-[#fecdbb]"
                   aria-labelledby="accordion-collapse-heading-3"
                 >
                   <div class="p-5">
@@ -521,7 +442,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-4"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-4"
@@ -529,7 +450,7 @@
                     <span>Berbelanja</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -544,12 +465,12 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-4"
-                  class="bg-[#fecdbb] pb-10"
+                  class="rounded-b-xl bg-[#fecdbb] pb-10"
                   aria-labelledby="accordion-collapse-heading-4"
                 >
-                  <p class="pl-5 mb-7">Cara berbelanja di burnerindo.com :</p>
+                  <p class="mb-7 pl-5">Cara berbelanja di burnerindo.com :</p>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-left xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-left text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       1. Daftar Member dan Login Member
@@ -588,7 +509,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-5"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-5"
@@ -596,7 +517,7 @@
                     <span>Surat Penawaran</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +532,7 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-5"
-                  class="bg-[#fecdbb]"
+                  class="rounded-b-xl bg-[#fecdbb]"
                   aria-labelledby="accordion-collapse-heading-5"
                 >
                   <div class="p-5">
@@ -636,7 +557,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-6"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-6"
@@ -644,7 +565,7 @@
                     <span>Pembayaran</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -659,26 +580,26 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-6"
-                  class="bg-[#fecdbb] pb-10"
+                  class="rounded-b-xl bg-[#fecdbb] pb-10"
                   aria-labelledby="accordion-collapse-heading-6"
                 >
-                  <p class="pl-5 mb-7">
+                  <p class="mb-7 pl-5">
                     Untuk pembayaran di Burnerindo.com untuk sekarang
                     menggunakan beberapa metode pembayaran yaitu metode transfer
                     dan metode dengan perusahaan patner PT. Burnerindo Teknik
                     Utama bernama Midtrans.
                   </p>
-                  <p class="pl-5 mb-7">
+                  <p class="mb-7 pl-5">
                     Setelah melakukan pembelian di burnerindo.com member akan
                     mendapatkan email konfirmasi bahwa proses transaksi belum
                     selesai. Dan member dapat melakukan pembayaran sebagai
                     berikut :
                   </p>
-                  <p class="pl-5 mb-3">
+                  <p class="mb-3 pl-5">
                     Cara pembayaran via ATM Mandiri / Bersama:
                   </p>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-left xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-left text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       1. Di menu utama, Pilih Transaksi Lainnya
@@ -704,11 +625,11 @@
                     </p>
                   </div>
 
-                  <p class="pl-5 mb-3 mt-10">
+                  <p class="mb-3 mt-10 pl-5">
                     Cara pembayaran via ATM BCA / Prima:
                   </p>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-left xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-left text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       1. Di menu utama, Pilih Transaksi Lainnya
@@ -734,11 +655,11 @@
                       cocok tekan Benar
                     </p>
                   </div>
-                  <p class="pl-5 mb-3 mt-10">
+                  <p class="mb-3 mt-10 pl-5">
                     Cara pembayaran via ATM Permata / Alto:
                   </p>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-left xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-left text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       1. Di menu utama, Pilih Transaksi Lainnya
@@ -762,7 +683,7 @@
                     </p>
                   </div>
 
-                  <p class="pl-5 mb-3 mt-10">
+                  <p class="mb-3 mt-10 pl-5">
                     Batas waktu pembayaran dari setiap member di
                     www.burnerindo.com adalah 1 x 24 jam, jika belum melakukan
                     pembayaran maka member tidak dapat melalukan transaksi
@@ -771,7 +692,7 @@
                     dalam waktu 1 x 24 jam belum melakukan pembayaran maka
                     transaksi yang sebelumnya dianggap batal.
                   </p>
-                  <p class="pl-5 mb-3 mt-10">
+                  <p class="mb-3 mt-10 pl-5">
                     Setelah member melakukan pembayaran maka member akan
                     mendapatkan email konfirmasi bahwa Transaksi Sukses dan/atau
                     Terima kasih atas pembayaran Anda.
@@ -788,7 +709,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-7"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-7"
@@ -796,7 +717,7 @@
                     <span>Pengiriman</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -811,10 +732,10 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-7"
-                  class="bg-[#fecdbb] pb-10 space-y-10"
+                  class="space-y-10 rounded-b-xl bg-[#fecdbb] pb-10"
                   aria-labelledby="accordion-collapse-heading-7"
                 >
-                  <p class="pl-5 mb-7">
+                  <p class="mb-7 pl-5">
                     Surat penawaran/ request quotation dibuat untuk memudahkan
                     member sebagai fasilitas tambahan untuk melakukan transaksi
                     di burnerindo. com. Member dapat membuat dan mengajukan
@@ -823,7 +744,7 @@
                     ajukan permintaan kepada burnerindo.com.
                   </p>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Pengiriman di burnerindo.com bisa ke mana saja
@@ -834,7 +755,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Biaya pengiriman di burnerindo.com berapa ya
@@ -846,7 +767,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Bagaimana member tahu bahwa barang yang sudah dipesan
@@ -859,7 +780,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Ke mana member dapat menanyakan informasi pengiriman
@@ -872,7 +793,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-3 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-3 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Kapan Produk Dikirimkan Kepada Anggota Yang Telah
@@ -897,7 +818,7 @@
                   <button
                     id="buttonAccor1"
                     type="button"
-                    class="flex justify-between items-center p-5 w-full text-[#4a4e5a] font-bold text-left rounded-t-xl bg-[#fecdbb]"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
                     data-accordion-target="#accordion-collapse-body-8"
                     aria-expanded="true"
                     aria-controls="accordion-collapse-body-8"
@@ -905,7 +826,7 @@
                     <span>Pengembalian Barang</span>
                     <svg
                       data-accordion-icon=""
-                      class="w-6 h-6 rotate-180 shrink-0"
+                      class="h-6 w-6 shrink-0 rotate-180"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"
@@ -920,11 +841,11 @@
                 </h2>
                 <div
                   id="accordion-collapse-body-8"
-                  class="bg-[#fecdbb] pb-10 space-y-10"
+                  class="space-y-10 rounded-b-xl bg-[#fecdbb] pb-10"
                   aria-labelledby="accordion-collapse-heading-8"
                 >
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Apakah produk/barang yang sudah dibeli di burnerindo.com
@@ -946,7 +867,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Bagaimana pembeli melakukan pengembalian produk/barang di
@@ -968,7 +889,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Siapakah yang menanggung biaya pengembalian barang/produk
@@ -982,7 +903,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Produk/barang yang tidak dapat dikembalikan karena kondisi
@@ -1009,7 +930,7 @@
                     </div>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Produk/barang yang dapat dikembalikan karena kondisi
@@ -1023,7 +944,7 @@
                     </p>
                   </div>
                   <div
-                    class="misson-1 bg-primary rounded-xl text-white py-5 px-5 xl:py-10 xl:px-10 text-center xl:space-y-7 mx-auto w-[70%]"
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
                   >
                     <p class="" data-translatable>
                       Produk/barang yang yang diterima pembeli tidak
@@ -1044,23 +965,225 @@
                   </div>
                 </div>
               </div>
+
+              <div
+                id="accordion-collapse"
+                data-accordion="collapse"
+                class="mt-8"
+              >
+                <h2 id="accordion-collapse-heading-9">
+                  <button
+                    id="buttonAccor1"
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
+                    data-accordion-target="#accordion-collapse-body-9"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-9"
+                  >
+                    <span>Pembatalan</span>
+                    <svg
+                      data-accordion-icon=""
+                      class="h-6 w-6 shrink-0 rotate-180"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-9"
+                  class="space-y-10 rounded-b-xl bg-[#fecdbb] pb-10"
+                  aria-labelledby="accordion-collapse-heading-9"
+                >
+                  <div
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
+                  >
+                    <p class="" data-translatable>
+                      Apakah pembeli dapat melakukan pembatalan transaksi di
+                      burnerindo.com
+                    </p>
+                    <p class="" data-translatable>
+                      Pembeli dapat melakukan pembatalan transaksi selama
+                      pembeli belum melakukan pembayaran di burnerindo.com
+                    </p>
+                  </div>
+                  <div
+                    class="misson-1 bg-primary mx-auto w-[70%] rounded-xl py-5 px-5 text-center text-white xl:space-y-7 xl:py-10 xl:px-10"
+                  >
+                    <p class="" data-translatable>
+                      Apakah burnerindo.com dapat menolak atau membatalkan
+                      pesanan atau transaksi dari pembeli
+                    </p>
+                    <p class="" data-translatable>
+                      Burnerindo.com dapat menolak atau membatalkan pesanan atau
+                      transaksi dari pembeli, dan jika pembeli sudah melakukan
+                      pembayaran kepada burnerindo.com maka burnerindo.com akan
+                      mengirimkan email kepada pembeli. Dan burnerindo.com akan
+                      mengembalikan uang kepada pembeli, proses pengembalian
+                      dana adalah 7 hari kerja.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="accordion-collapse"
+                data-accordion="collapse"
+                class="mt-8"
+              >
+                <h2 id="accordion-collapse-heading-10">
+                  <button
+                    id="buttonAccor1"
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
+                    data-accordion-target="#accordion-collapse-body-10"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-10"
+                  >
+                    <span>Pengembalian Dana </span>
+                    <svg
+                      data-accordion-icon=""
+                      class="h-6 w-6 shrink-0 rotate-180"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-10"
+                  class="rounded-b-xl bg-[#fecdbb]"
+                  aria-labelledby="accordion-collapse-heading-10"
+                >
+                  <div class="p-5">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                      Pengembalian dana kepada pembeli dilakukan karena
+                      transaksi/pemesanan di batalkan oleh burnerindo.com,
+                      kelebihan transfer, hal-hal lainnya yang telah di setujui
+                      oleh burnerindo.com. Dana akan dikembalikan jika pembeli
+                      telah menerima email dari burnerindo.com dan pembeli telah
+                      mengisi form pengembalian dana dan mengirimkan kembali ke
+                      email support@burnerindo.co.id atau melalui live chat.
+                      Untuk pengembalian dana dengan member bisnis atau
+                      pembelian atau transaksi atas nama perusahaan maka
+                      pengembalian dana akan ditransfer atas nama perusahaan
+                      tersebut. Proses untuk pengembalian dana adalah 14 hari
+                      kerja dimulai pembeli telah menerima email persetujuan
+                      pengembalian dana dari burnerindo.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="accordion-collapse"
+                data-accordion="collapse"
+                class="mt-8"
+              >
+                <h2 id="accordion-collapse-heading-11">
+                  <button
+                    id="buttonAccor1"
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
+                    data-accordion-target="#accordion-collapse-body-11"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-11"
+                  >
+                    <span>Transaksi melalui Kredivo </span>
+                    <svg
+                      data-accordion-icon=""
+                      class="h-6 w-6 shrink-0 rotate-180"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-11"
+                  class="rounded-b-xl bg-[#fecdbb]"
+                  aria-labelledby="accordion-collapse-heading-11"
+                >
+                  <div class="p-5">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                      Persyaratan, ketentuan, dan kebijakan di Kredivo Untuk
+                      Transaksi Melalui Kredivo silahkan klik link
+                      kredivo.com/faqs
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="accordion-collapse"
+                data-accordion="collapse"
+                class="mt-8"
+              >
+                <h2 id="accordion-collapse-heading-12">
+                  <button
+                    id="buttonAccor1"
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-t-xl bg-[#fecdbb] p-5 text-left font-bold text-[#4a4e5a]"
+                    data-accordion-target="#accordion-collapse-body-12"
+                    aria-expanded="true"
+                    aria-controls="accordion-collapse-body-12"
+                  >
+                    <span>Persyaratan Ketentuan dan Kebijakan </span>
+                    <svg
+                      data-accordion-icon=""
+                      class="h-6 w-6 shrink-0 rotate-180"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </h2>
+                <div
+                  id="accordion-collapse-body-12"
+                  class="rounded-b-xl bg-[#fecdbb]"
+                  aria-labelledby="accordion-collapse-heading-12"
+                >
+                  <div class="p-5">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                      Semua persyaratan, ketentuan, dan kebijakan yang dibuat
+                      burnerindo.com yang ditulis dan dicantumkan di atas adalah
+                      mutlak dan tidak dapat diganggu gugat. Syarat ketentuan
+                      dan kebijakan di burnerindo.com ini dapat berubah
+                      sewaktu-waktu tanpa pemberitahuan da
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.884484466837!2d106.81461096476875!3d-6.146213895549979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f60875e06cc9%3A0x13e44fe2511240e6!2sLTC%20Glodok%20Hayam%20Wuruk!5e0!3m2!1sid!2sid!4v1653714155952!5m2!1sid!2sid"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        class="mx-auto mb-16 xl:w-[80%] xl:h-[40rem]"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
     </main>
 
     <footer
-      class="border-primary mb-0 h-[50rem] lg:h-auto lg:pb-16 xl:pb-0 xl:h-full border-t-[15px] bg-[#fecdbb] px-6 md:px-14 xl:mb-0 xl:mt-0"
+      class="border-primary mb-0 h-[50rem] border-t-[15px] bg-[#fecdbb] px-6 md:px-14 lg:h-auto lg:pb-16 xl:mb-0 xl:mt-0 xl:h-full xl:pb-0"
     >
       <div
         class="container mx-auto mt-12 flex h-[30rem] flex-col justify-start xl:h-[18rem] xl:flex-row"
@@ -1070,7 +1193,7 @@
         >
           <div class="logoFooter flex flex-col xl:flex-row xl:pr-[5rem]">
             <img
-              class="h-[6rem] w-[12rem] xl:w-auto xl:h-[6rem]"
+              class="h-[6rem] w-[12rem] xl:h-[6rem] xl:w-auto"
               src="./../assets/logo.webp"
               alt=""
               srcset=""
@@ -1093,9 +1216,9 @@
             </h6>
           </div>
           <div
-            class="footer-menu flex w-full flex-wrap space-x-5 xl:space-x-0 xl:space-y-0 space-y-5 xl:justify-around xl:mt-0 mt-7"
+            class="footer-menu mt-7 flex w-full flex-wrap space-x-5 space-y-5 xl:mt-0 xl:justify-around xl:space-x-0 xl:space-y-0"
           >
-            <h6 class="text-black mt-5 xl:mt-0" data-translatable>
+            <h6 class="mt-5 text-black xl:mt-0" data-translatable>
               <span>SYARAT PENGGUNAAN</span>
               <span>TERMS OF USE</span>
             </h6>
@@ -1350,7 +1473,7 @@
               </div>
             </div>
             <div
-              class="brands-secure flex w-[13rem] items-end justify-between mt-10 xl:mt-0 xl:mb-0 mb-10"
+              class="brands-secure mt-10 mb-10 flex w-[13rem] items-end justify-between xl:mt-0 xl:mb-0"
             >
               <img
                 class="h-[50px] w-[60px]"
@@ -1372,7 +1495,7 @@
               />
             </div>
           </div>
-          <div class="brands-copyright text-primary font-bold pb-12 xl:pb-0">
+          <div class="brands-copyright text-primary pb-12 font-bold xl:pb-0">
             <p data-translatable>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
               <span>© Copyright 2022 PT. Burnerindo Teknik Utama</span>
