@@ -61,10 +61,20 @@
             </div>
             <input
               type="text"
-              id="search-navbar"
+              id="searchNavbar"
               class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
               placeholder="Cari..."
             />
+            <div
+              id="showMenu"
+              class="list-menus absolute left-0 right-0 hidden rounded-xl bg-white pl-10"
+            >
+              <li id="menuText"></li>
+              <li>Hello</li>
+              <li>Hello</li>
+              <li>Hello</li>
+              <li>Hello</li>
+            </div>
           </div>
           <button
             id="btnHamburger"
@@ -124,7 +134,7 @@
             </div>
             <input
               type="text"
-              id="search-navbar"
+              id=""
               class="mx-auto block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0"
               placeholder="Search..."
             />
@@ -822,8 +832,16 @@
     <script src="./../dist/js/dom-i18n.min.js"></script>
     <!-- <script src="./../dist/js/app.js"></script> -->
     <script>
+      let searchNav = document.getElementById("searchNavbar");
+      let showMenu = document.getElementById("showMenu");
+      console.log(searchNav);
+      searchNav.addEventListener("keyup", function () {
+        console.log(searchNav.value);
+        showMenu.classList.remove("hidden");
+      });
       window.onscroll = function () {
         const header = document.getElementById("navbar");
+        let showMenu = document.getElementById("showMenu");
         const changedColor = document.getElementById("changedColor");
         const fixedHeader = header.offsetTop;
 
