@@ -103,9 +103,26 @@
     margin-left: 0 !important;
   }
 
-  /* .sale-content__merk .owl-item {
-    width: 12rem !important;
-  } */
+  .bg-available {
+    color: #fff;
+    padding: 2px 9px 2px 9px;
+    font-size: 8px;
+    text-align: center;
+    width: 5rem;
+    background: linear-gradient(
+      90deg,
+      rgb(0 255 67) 0%,
+      rgb(9 121 23) 75%,
+      rgb(17 111 33) 100%
+    );
+    border-radius: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(0 255 67) 0%,
+      rgb(9 121 23) 75%,
+      rgb(17 111 33) 100%
+    );
+  }
 
   .marquee {
     overflow: hidden;
