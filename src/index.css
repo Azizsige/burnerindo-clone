@@ -185,6 +185,10 @@
     .fa-envelope.envelope-content::before {
       font-size: 25px !important;
     }
+
+    .owl-carousel .owl-item img {
+      @apply h-[7rem]
+    }
   }
 
   @media (min-width: 1536px) {
