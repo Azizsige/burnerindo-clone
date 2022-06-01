@@ -107,25 +107,25 @@ $(".owl-flash").owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
       nav: true,
     },
     600: {
       items: 3,
       nav: true,
     },
-    1024: {
-      items: 3,
+    1080: {
+      items: 5,
       nav: true,
       loop: true,
     },
     1280: {
-      items: 2,
+      items: 3,
       nav: true,
       loop: true,
     },
     1536: {
-      items: 2,
+      items: 4,
       nav: true,
       loop: true,
     },
