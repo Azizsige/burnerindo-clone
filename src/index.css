@@ -177,7 +177,7 @@
     }
 
     .fas::before {
-      font-size: 14px !important;
+      font-size: 20px !important;
     }
 
     .fas.marker-content.fa-map-marker-alt::before,
