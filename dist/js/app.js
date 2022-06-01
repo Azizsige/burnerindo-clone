@@ -120,12 +120,12 @@ $(".owl-flash").owlCarousel({
       loop: true,
     },
     1280: {
-      items: 3,
+      items: 2,
       nav: true,
       loop: true,
     },
     1536: {
-      items: 3,
+      items: 2,
       nav: true,
       loop: true,
     },
