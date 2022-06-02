@@ -21,6 +21,26 @@
       Industrial Spare Parts Burners E-Commerce #1 Indonesia | Burnerindo Teknik
       Utama
     </title>
+    <style>
+      .menu-desk::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+      .menu-desk::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    .menu-desk::-webkit-scrollbar-thumb {
+      background: grey;
+    }
+
+    /* Handle on hover */
+    .menu-desk::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
   </head>
   <body class="overflow-x-hidden">
     <nav id="navbar" class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:px-[5rem]">
@@ -38,10 +58,99 @@
         <div class="flex md:order-1 xl:ml-0 2xl:ml-[11rem]">
           <input
             type="text"
-            id="search-navbar"
-            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0 lg:hidden"
+            id="searchNavbar-mobile"
+            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mr-16 xl:hidden"
             placeholder="Search..."
           />
+          <div
+            id="showMenu-mobile"
+            class="list-menus absolute top-[4rem] right-0 hidden max-h-[22rem] mx-auto sm:max-h-[18rem] w-full left-[-1rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+          >
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                  Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                  Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                  Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="showLoading-mobile"
+            class="list-menus absolute left-0 top-[4rem] right-0 hidden h-[4rem] items-center justify-start rounded-xl bg-white pl-10 text-black shadow-2xl"
+          >
+            <li id="listLoading" class="list-none text-xl">Loading . . .</li>
+          </div>
           <div class="relative hidden md:block xl:ml-[10rem]">
             <div
               class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
@@ -61,10 +170,96 @@
             </div>
             <input
               type="text"
-              id="search-navbar"
+              id="searchNavbar"
               class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
               placeholder="Cari..."
             />
+            <div
+              id="showMenu"
+              class="list-menus menu-desk absolute left-[-8rem] right-0 hidden max-h-[18rem] w-[35rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+            >
+              <div
+                class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+              >
+                <div class="search-text space-y-2">
+                  <p class="text-[#30323a]">
+                    <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                  </p>
+                  <p class="text-[#cd0000]">
+                    013328 <span class="text-[#999]">FBR</span>
+                  </p>
+                  <div class="search-price">
+                    <b class="text-[#30323a]">Rp 633,000</b>
+                    <b class="text-[#999] line-through">Rp 688,000</b>
+                  </div>
+                  <div class="bg-available">Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div
+                class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+              >
+                <div class="search-text space-y-2">
+                  <p class="text-[#30323a]">
+                    <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                  </p>
+                  <p class="text-[#cd0000]">
+                    013328 <span class="text-[#999]">FBR</span>
+                  </p>
+                  <div class="search-price">
+                    <b class="text-[#30323a]">Rp 633,000</b>
+                    <b class="text-[#999] line-through">Rp 688,000</b>
+                  </div>
+                  <div class="bg-available">Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+              <div
+                class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+              >
+                <div class="search-text space-y-2">
+                  <p class="text-[#30323a]">
+                    <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                  </p>
+                  <p class="text-[#cd0000]">
+                    013328 <span class="text-[#999]">FBR</span>
+                  </p>
+                  <div class="search-price">
+                    <b class="text-[#30323a]">Rp 633,000</b>
+                    <b class="text-[#999] line-through">Rp 688,000</b>
+                  </div>
+                  <div class="bg-available">Stock Tersedia</div>
+                </div>
+                <div class="search-img">
+                  <img
+                    class="h-[5rem]"
+                    src="./assets/search/img.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              id="showLoading"
+              class="list-menus absolute left-0 right-0 hidden h-[4rem] items-center justify-start rounded-xl bg-white pl-10 text-black shadow-2xl"
+            >
+              <li id="listLoading" class="list-none text-xl">Loading . . .</li>
+            </div>
           </div>
           <button
             id="btnHamburger"
@@ -105,30 +300,6 @@
           class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center justify-between bg-white duration-300 ease-in-out md:static md:left-0 md:top-0 md:order-2 md:flex md:h-auto md:w-auto md:bg-transparent"
           id="mobile-menu-3"
         >
-          <div class="relative mt-3 md:hidden">
-            <div
-              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-[1.75rem] lg:pl-3"
-            >
-              <svg
-                class="h-5 w-5 text-gray-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              class="mx-auto block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0"
-              placeholder="Search..."
-            />
-          </div>
           <ul
             id="changedColor"
             class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0 xl:text-[14px] xl:text-white"

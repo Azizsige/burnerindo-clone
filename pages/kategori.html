@@ -18,167 +18,339 @@
       Industrial Spare Parts Burners E-Commerce #1 Indonesia | Burnerindo Teknik
       Utama
     </title>
+    <style>
+      .menu-desk::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+      .menu-desk::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    .menu-desk::-webkit-scrollbar-thumb {
+      background: grey;
+    }
+
+    /* Handle on hover */
+    .menu-desk::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
   </head>
   <body>
     <nav
-      id="navbar"
-      class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
+    id="navbar"
+    class="bg-white px-[2.5rem] py-2.5 md:px-14 xl:bg-transparent xl:px-[5rem]"
+  >
+    <div
+      class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
     >
-      <div
-        class="container relative z-10 mx-auto flex flex-nowrap items-center justify-between xl:flex-wrap"
-      >
-        <a href="./../index.html" class="flex items-center">
-          <img
-            loading="lazy"
-            src="./../assets/logo.webp"
-            class="mr-3 h-16 sm:h-20"
-            alt="Flowbite Logo"
-          />
-        </a>
-        <div class="flex md:order-1 xl:ml-[4rem] 2xl:ml-[11rem]">
-          <input
-            type="text"
-            id="search-navbar"
-            class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0 lg:hidden"
-            placeholder="Search..."
-          />
-          <div class="relative hidden md:block xl:ml-[7rem]">
-            <div
-              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
-            >
-              <svg
-                class="h-5 w-5 text-white"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
-              placeholder="Cari..."
-            />
-          </div>
-          <button
-            id="btnHamburger"
-            type="button"
-            class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden xl:ml-[1.9rem]"
-            aria-controls="mobile-menu-3"
-            aria-expanded="false"
+      <a href="./../index.html" class="flex items-center">
+        <img
+          loading="lazy"
+          src="./../assets/logo.webp"
+          class="mr-3 h-16 sm:h-20"
+          alt="Flowbite Logo"
+        />
+      </a>
+      <div class="flex md:order-1 xl:ml-[4rem] 2xl:ml-[11rem]">
+        <input
+          type="text"
+          id="searchNavbar-mobile"
+          class="mx-auto block w-[55%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-[1.5rem] text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mr-16 xl:hidden"
+          placeholder="Search..."
+        />
+        <div
+          id="showMenu-mobile"
+          class="list-menus absolute top-[4rem] right-0 hidden max-h-[22rem] mx-auto sm:max-h-[18rem] w-full left-[-1rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+        >
+          <div
+            class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
           >
-            <svg
-              id="open"
-              class="h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <svg
-              class="hidden h-6 w-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+            <div class="search-text space-y-2">
+              <p class="text-[#30323a]">
+                <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                Disc
+              </p>
+              <p class="text-[#cd0000]">
+                013328 <span class="text-[#999]">FBR</span>
+              </p>
+              <div class="search-price">
+                <b class="text-[#30323a]">Rp 633,000</b>
+                <b class="text-[#999] line-through">Rp 688,000</b>
+              </div>
+              <div class="bg-available">Stock Tersedia</div>
+            </div>
+            <div class="search-img">
+              <img
+                class="h-[5rem]"
+                src="./../assets/search/img.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div
+            class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+          >
+            <div class="search-text space-y-2">
+              <p class="text-[#30323a]">
+                <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                Disc
+              </p>
+              <p class="text-[#cd0000]">
+                013328 <span class="text-[#999]">FBR</span>
+              </p>
+              <div class="search-price">
+                <b class="text-[#30323a]">Rp 633,000</b>
+                <b class="text-[#999] line-through">Rp 688,000</b>
+              </div>
+              <div class="bg-available">Stock Tersedia</div>
+            </div>
+            <div class="search-img">
+              <img
+                class="h-[5rem]"
+                src="./../assets/search/img.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div
+            class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+          >
+            <div class="search-text space-y-2">
+              <p class="text-[#30323a]">
+                <span id="listText-mobile"></span> Nozzle Head & Air Diffuser
+                Disc
+              </p>
+              <p class="text-[#cd0000]">
+                013328 <span class="text-[#999]">FBR</span>
+              </p>
+              <div class="search-price">
+                <b class="text-[#30323a]">Rp 633,000</b>
+                <b class="text-[#999] line-through">Rp 688,000</b>
+              </div>
+              <div class="bg-available">Stock Tersedia</div>
+            </div>
+            <div class="search-img">
+              <img
+                class="h-[5rem]"
+                src="./../assets/search/img.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
         </div>
         <div
-          id="sidebar"
-          class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center justify-between bg-white duration-300 ease-in-out md:static md:left-0 md:top-0 md:order-2 md:flex md:h-auto md:w-auto md:bg-transparent"
-          id="mobile-menu-3"
+          id="showLoading-mobile"
+          class="list-menus absolute left-0 top-[4rem] right-0 hidden h-[4rem] items-center justify-start rounded-xl bg-white pl-10 text-black shadow-2xl"
         >
-          <div class="relative mt-3 md:hidden">
-            <div
-              class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-[1.75rem] lg:pl-3"
-            >
-              <svg
-                class="h-5 w-5 text-gray-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              class="mx-auto block w-[85%] rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500 sm:text-sm md:w-full lg:mx-0"
-              placeholder="Search..."
-            />
-          </div>
-          <ul
-            id="changedColor"
-            class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:flex-row md:items-center md:space-x-8 md:font-medium lg:space-y-0 xl:text-[14px] xl:text-white"
-          >
-            <li>
-              <a
-                href="./pages/login.html"
-                class="block rounded py-2 pr-4 pl-3 md:p-0"
-                aria-current="page"
-                data-translatable
-              >
-                <span>Masuk/Daftar</span>
-                <span>Login/Register</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
-                data-translatable
-              >
-                <span>Tentang Kami</span>
-                <span>About Us</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
-                data-translatable
-              >
-                <span
-                  >Keranjang <i class="fas fa-shopping-cart xl:fa-[12px]"></i
-                ></span>
-                <span>Cart <i class="fas fa-shopping-cart"></i></span>
-              </a>
-            </li>
-            <li class="flex items-center justify-center">
-              <a href="#" class="language mr-5" data-lang-ref="id">
-                <img class="h-6 w-6" src="./../assets/indonesia.png" />
-              </a>
-              |
-              <a href="#" class="language ml-5" data-lang-ref="en">
-                <img class="h-6 w-6" src="./../assets/united.png" />
-              </a>
-            </li>
-          </ul>
+          <li id="listLoading" class="list-none text-xl">Loading . . .</li>
         </div>
+        <div class="relative hidden xl:ml-[7rem] xl:block">
+          <div
+            class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+          >
+            <svg
+              class="h-5 w-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="searchNavbar"
+            class="block w-[20rem] rounded-full border-2 border-white bg-[#cc0000] p-2 pl-10 text-white placeholder:text-white focus:border-white focus:ring-white sm:text-sm md:w-48 xl:w-[20rem]"
+            placeholder="Cari..."
+          />
+          <div
+            id="showMenu"
+            class="list-menus menu-desk absolute left-[-8rem] right-0 hidden max-h-[18rem] w-[35rem] flex-col overflow-y-scroll rounded-xl bg-white text-black shadow-2xl"
+          >
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./../assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./../assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div
+              class="searchs search-1 flex w-full items-center justify-between border border-b-gray-300 px-[1rem] py-[1rem]"
+            >
+              <div class="search-text space-y-2">
+                <p class="text-[#30323a]">
+                  <span id="listText"></span> Nozzle Head & Air Diffuser Disc
+                </p>
+                <p class="text-[#cd0000]">
+                  013328 <span class="text-[#999]">FBR</span>
+                </p>
+                <div class="search-price">
+                  <b class="text-[#30323a]">Rp 633,000</b>
+                  <b class="text-[#999] line-through">Rp 688,000</b>
+                </div>
+                <div class="bg-available">Stock Tersedia</div>
+              </div>
+              <div class="search-img">
+                <img
+                  class="h-[5rem]"
+                  src="./../assets/search/img.jpg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="showLoading"
+            class="list-menus absolute left-0 right-0 hidden h-[4rem] items-center justify-start rounded-xl bg-white pl-10 text-black shadow-2xl"
+          >
+            <li id="listLoading" class="list-none text-xl">Loading . . .</li>
+          </div>
+        </div>
+        <button
+          id="btnHamburger"
+          type="button"
+          class="inline items-center rounded-lg p-2 text-sm text-gray-500 transition-all duration-300 ease-in-out hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 xl:ml-[1.9rem] xl:hidden"
+          aria-controls="mobile-menu-3"
+          aria-expanded="false"
+        >
+          <svg
+            id="open"
+            class="h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            class="hidden h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
-    </nav>
+      <div
+        id="sidebar"
+        class="transitioin-all absolute left-[-100%] top-[4rem] h-screen w-[13rem] items-center bg-white duration-300 ease-in-out md:top-0 md:order-2 md:flex md:h-screen md:w-[70%] md:flex-col md:justify-center md:space-y-5 md:shadow-2xl xl:static xl:h-auto xl:w-auto xl:flex-row xl:justify-between xl:space-y-0 xl:bg-transparent"
+        id="mobile-menu-3"
+      >
+        <ul
+          id="changedColor"
+          class="mt-4 flex flex-col space-y-4 text-center text-[1.2rem] text-gray-700 md:mt-0 md:w-full md:items-center md:font-medium lg:space-y-5 xl:w-auto xl:flex-row xl:space-x-8 xl:space-y-0 xl:text-[14px] xl:text-white"
+        >
+          <li>
+            <a
+              href="./pages/login.html"
+              class="block rounded py-2 pr-4 pl-3 md:p-0"
+              aria-current="page"
+              data-translatable
+            >
+            <span>Masuk/Daftar</span>
+            <span>Login/Register</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="./tentang-kami.html"
+              class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
+              data-translatable
+            >
+            <span>Tentang Kami</span>
+            <span>About Us</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
+              data-translatable
+            >
+              
+              <span
+                >Keranjang <i class="fas fa-shopping-cart xl:fa-[12px]"></i
+              ></span>
+              <span>Cart <i class="fas fa-shopping-cart"></i></span>
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="#" class="language mr-5" data-lang-ref="id">
+              <img class="h-6 w-6" src="./../assets/indonesia.png" />
+            </a>
+            |
+            <a href="#" class="language ml-5" data-lang-ref="en">
+              <img class="h-6 w-6" src="./../assets/united.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <main>
       <section
@@ -372,7 +544,7 @@
                       srcset=""
                     />
                     <h6
-                      class="mt-3 break-words break-words text-center text-[12px] xl:text-[14px]"
+                      class="mt-3 break-words text-center text-[12px] xl:text-[14px]"
                       data-translatable
                     >
                       <span>Menyeimbangkan</span>
@@ -1415,6 +1587,101 @@
     <script src="./../dist/js/dom-i18n.min.js"></script>
     <!-- <script src="./../dist/js/app.js"></script> -->
     <script>
+      let searchNav = document.getElementById("searchNavbar");
+      let searchNavMob = document.getElementById("searchNavbar-mobile");
+      let showMenu = document.getElementById("showMenu");
+      let showMenuMob = document.getElementById("showMenu-mobile");
+      let listText = document.getElementById("listText");
+      let listTextMob = document.getElementById("listText-mobile");
+      let showLoading = document.getElementById("showLoading");
+      let showLoadingMob = document.getElementById("showLoading-mobile");
+      let produks = document.querySelector(".searchs");
+      console.log(searchNav);
+
+      produks.addEventListener("click", function (e) {
+        // e.preventDefault();
+        e.stopPropagation();
+        alert("Yeyy");
+      });
+
+      searchNav.addEventListener("keyup", function () {
+        console.log(searchNav.value);
+        if (searchNav.value != "") {
+          showMenu.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoading.classList.remove("flex");
+          showLoading.classList.add("hidden");
+
+          listText.innerText = searchNav.value;
+        } else {
+          showMenu.classList.add("hidden");
+          showLoading.classList.remove("hidden");
+          showLoading.classList.add("flex");
+        }
+      });
+
+      searchNav.addEventListener("blur", function (e) {
+        showMenu.classList.add("hidden");
+        showLoading.classList.add("hidden");
+        // e.preventDefault();
+        // e.stopPropagation();
+      });
+      searchNav.addEventListener("focus", function () {
+        if (searchNav.value != "") {
+          showMenu.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoading.classList.remove("flex");
+          showLoading.classList.add("hidden");
+
+          listText.innerText = searchNav.value;
+        } else {
+          showMenu.classList.add("hidden");
+          showLoading.classList.remove("hidden");
+          showLoading.classList.add("flex");
+        }
+        // showLoading.classList.remove("hidden");
+        // showLoading.classList.add("flex");
+      });
+
+      searchNavMob.addEventListener("keyup", function () {
+        console.log(searchNavMob.value);
+        if (searchNavMob.value != "") {
+          showMenuMob.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoadingMob.classList.remove("flex");
+          showLoadingMob.classList.add("hidden");
+
+          listTextMob.innerText = searchNavMob.value;
+        } else {
+          showMenuMob.classList.add("hidden");
+          showLoadingMob.classList.remove("hidden");
+          showLoadingMob.classList.add("flex");
+        }
+      });
+
+      searchNavMob.addEventListener("blur", function (e) {
+        showMenuMob.classList.add("hidden");
+        showLoadingMob.classList.add("hidden");
+        // e.preventDefault();
+        // e.stopPropagation();
+      });
+      searchNavMob.addEventListener("focus", function () {
+        if (searchNavMob.value != "") {
+          showMenuMob.classList.remove("hidden");
+          // showMenu.classList.add("flex");
+          showLoadingMob.classList.remove("flex");
+          showLoadingMob.classList.add("hidden");
+
+          listTextMob.innerText = searchNavMob.value;
+        } else {
+          showMenuMob.classList.add("hidden");
+          showLoadingMob.classList.remove("hidden");
+          showLoadingMob.classList.add("flex");
+        }
+        // showLoading.classList.remove("hidden");
+        // showLoading.classList.add("flex");
+      });
+      
       window.onscroll = function () {
         const header = document.getElementById("navbar");
         const changedColor = document.getElementById("changedColor");
