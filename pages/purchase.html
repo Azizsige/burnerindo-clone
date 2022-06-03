@@ -41,7 +41,15 @@
     .fas.fa-plus::before,
     .fas.fa-minus::before,
     .fas.fa-trash::before {
+      font-size: 12px !important;
+    }
+
+    @media (min-width: 1280px) {
+        .fas.fa-plus::before,
+    .fas.fa-minus::before,
+    .fas.fa-trash::before {
       font-size: 14px !important;
+    }
     }
   </style>
   </head>
@@ -375,101 +383,60 @@
         >
           <div class="wrapper-kategori relative z-0 mt-8 xl:mt-[7rem] xl:w-[73rem]">
             <div
-              class="purchase-navbar bg-gray-500 text-white xl:py-3 flex flex-wrap justify-around xl:items-center rounded-t-2xl text-[14px] font-bold xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
+              class="purchase-navbar bg-gray-500 text-white xl:py-3 flex flex-wrap justify-start pl-5 py-3 xl:pl-5 xl:justify-around xl:items-center rounded-t-2xl text-[14px] font-bold xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
             <div class="flex items-center xl:text-[20px]">
                 <input id="default-checkbox" type="checkbox" value="" class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-gray-600 focus:ring-red-600 ">
                 <label for="default-checkbox" class="ml-2 font-medium">Pilih Semua</label>
             </div>
-            <p class="xl:ml-[18rem]">Harga Satuan</p>
-            <p>Jumlah Barang</p>
-            <p>Total Harga</p>
+            <p class="hidden xl:block xl:ml-[18rem]">Harga Satuan</p>
+            <p class="hidden xl:block">Jumlah Barang</p>
+            <p class="hidden xl:block">Total Harga</p>
           </div>
          <div class="wrapper-purchase__item xl:overflow-y-scroll xl:h-[20rem]">
-            <div class="purchase-items flex xl:items-center xl:justify-around">
+            <div class="purchase-items flex-col xl:flex-row flex xl:items-center xl:justify-around">
                 <div class="item flex xl:ml-[-2rem]">
-                    <div class="item-barang flex xl:items-center">
+                    <div class="item-barang flex items-center space-x-3 xl:space-x-0 xl:items-center px-5">
                       <div class="flex items-center xl:text-[20px]">
                           <input id="default-checkbox" type="checkbox" value="" class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600 ">
                           <label for="default-checkbox" class="ml-2 font-medium"></label>
                       </div>
-                      <img class="xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
-                      <div class="barang__text xl:space-y-3">
+                      <img class="h-[7rem] xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
+                      <div class="barang__text space-y-3 xl:space-y-3">
                           <p>Nama Produk</p>
-                          <input class="w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
+                          <input class="w-full xl:w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
                       </div>
                     </div>
                 </div>
-                <div class="item-harga xl:space-y-1 xl:text-[16px]">
+                <div class="show-mobile flex items-center px-1 justify-between pb-5 xl:hidden">
+                    <div class="item-harga  px-5 xl:space-y-1 text-[12px] xl:text-[16px]">
+                        <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
+                        <p class="font-bold text-black">Rp. 5.000.000</p>
+                    </div>
+                    <div class="item-jumlah flex space-x-1 items-center xl:space-x-3">
+                        <button class="bg-red-600 w-6 h-6 rounded-full text-white font-bold text-[20px] flex justify-center items-center"><i class="fas fa-minus"></i></button>
+                        <p class="font-bold text-black text-[12px] xl:text-[16px]">12</p>
+                        <button class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="item-total flex items-center space-x-1 xl:space-x-3">
+                        <p class="font-bold text-black text-[12px] xl:text-[16px]">Rp. 100.000</p>
+                        <button class="bg-red-600 w-6 h-6 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="item-harga hidden xl:block px-5 xl:space-y-1 xl:text-[16px]">
                     <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
                     <p class="font-bold text-black">Rp. 5.000.000</p>
                 </div>
-                <div class="item-jumlah flex xl:space-x-3">
+                <div class="item-jumlah hidden xl:flex xl:space-x-3">
                     <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"><i class="fas fa-minus"></i></button>
                     <p class="font-bold text-black xl:text-[16px]">12</p>
                     <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-plus"></i></button>
                 </div>
-                <div class="item-total flex xl:space-x-3">
+                <div class="item-total hidden xl:flex xl:space-x-3">
                     <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
                     <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-trash"></i></button>
                 </div>
             </div>
-            <div class="purchase-items flex xl:items-center xl:justify-around">
-              <div class="item flex xl:ml-[-2rem]">
-                  <div class="item-barang flex xl:items-center">
-                    <div class="flex items-center xl:text-[20px]">
-                        <input id="default-checkbox" type="checkbox" value="" class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600 ">
-                        <label for="default-checkbox" class="ml-2 font-medium"></label>
-                    </div>
-                    <img class="xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
-                    <div class="barang__text xl:space-y-3">
-                        <p>Nama Produk</p>
-                        <input class="w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
-                    </div>
-                  </div>
-              </div>
-              <div class="item-harga xl:space-y-1 xl:text-[16px]">
-                  <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
-                  <p class="font-bold text-black">Rp. 5.000.000</p>
-              </div>
-              <div class="item-jumlah flex xl:space-x-3">
-                  <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"><i class="fas fa-minus"></i></button>
-                  <p class="font-bold text-black xl:text-[16px]">12</p>
-                  <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-plus"></i></button>
-              </div>
-              <div class="item-total flex xl:space-x-3">
-                  <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
-                  <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-trash"></i></button>
-              </div>
-          </div>
-          <div class="purchase-items flex xl:items-center xl:justify-around">
-            <div class="item flex xl:ml-[-2rem]">
-                <div class="item-barang flex xl:items-center">
-                  <div class="flex items-center xl:text-[20px]">
-                      <input id="default-checkbox" type="checkbox" value="" class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-red-600 focus:ring-red-600 ">
-                      <label for="default-checkbox" class="ml-2 font-medium"></label>
-                  </div>
-                  <img class="xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
-                  <div class="barang__text xl:space-y-3">
-                      <p>Nama Produk</p>
-                      <input class="w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
-                  </div>
-                </div>
-            </div>
-            <div class="item-harga xl:space-y-1 xl:text-[16px]">
-                <p class="text-gray-400 line-through">Rp. 4.xxx.xxx</p>
-                <p class="font-bold text-black">Rp. 5.000.000</p>
-            </div>
-            <div class="item-jumlah flex xl:space-x-3">
-                <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold text-[20px] flex justify-center items-center"><i class="fas fa-minus"></i></button>
-                <p class="font-bold text-black xl:text-[16px]">12</p>
-                <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-plus"></i></button>
-            </div>
-            <div class="item-total flex xl:space-x-3">
-                <p class="font-bold text-black xl:text-[16px]">Rp. 100.000</p>
-                <button class="bg-red-600 w-7 h-7 rounded-full text-white font-bold flex justify-center items-center"><i class="fas fa-trash"></i></button>
-            </div>
-        </div>
          </div>
          <div
               class="purchase-footer bg-gray-500 text-white xl:py-3 flex flex-wrap justify-around xl:items-center rounded-b-2xl text-[14px] xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
