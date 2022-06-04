@@ -325,8 +325,8 @@
                 aria-current="page"
                 data-translatable
               >
-                <span>Login/Register</span>
-                <span>Masuk/Daftar</span>
+              <span>Masuk/Daftar</span>
+              <span>Login/Register</span>
               </a>
             </li>
             <li>
@@ -335,8 +335,8 @@
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
                 data-translatable
               >
-                <span>About Us</span>
-                <span>Tentang Kami</span>
+              <span>Tentang Kami</span>
+              <span>About Us</span>
               </a>
             </li>
             <li>
@@ -345,10 +345,11 @@
                 class="block border-b border-gray-100 py-2 pr-4 pl-3 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent"
                 data-translatable
               >
-                <span>Cart <i class="fas fa-shopping-cart"></i></span>
+                
                 <span
                   >Keranjang <i class="fas fa-shopping-cart xl:fa-[12px]"></i
                 ></span>
+                <span>Cart <i class="fas fa-shopping-cart"></i></span>
               </a>
             </li>
             <li class="flex items-center justify-center">
@@ -387,11 +388,23 @@
             >
             <div class="flex items-center xl:text-[20px]">
                 <input id="default-checkbox" type="checkbox" value="" class="hover:cursor-pointer w-4 h-4 text-red-600 bg-gray-100 rounded-full border-gray-600 focus:ring-red-600 ">
-                <label for="default-checkbox" class="ml-2 font-medium">Pilih Semua</label>
+                <label for="default-checkbox" class="ml-2 font-medium" data-translatable>
+                  <span>Pilih Semua</span>
+                  <span>Choose All</span>
+                </label>
             </div>
-            <p class="hidden xl:block xl:ml-[18rem]">Harga Satuan</p>
-            <p class="hidden xl:block">Jumlah Barang</p>
-            <p class="hidden xl:block">Total Harga</p>
+            <p class="hidden xl:block xl:ml-[18rem]" data-translatable>
+              <span>Harga Satuan</span>
+              <span>Unit Price</span>
+            </p>
+            <p class="hidden xl:block" data-translatable>
+              <span>Jumlah Barang</span>
+              <span>The Amount of Goods</span>
+            </p>
+            <p class="hidden xl:block" data-translatable>
+              <span>Total Harga</span>
+              <span>Total price</span>
+            </p>
           </div>
          <div class="wrapper-purchase__item overflow-y-scroll h-[23rem] xl:h-[22rem]">
             <div class="purchase-items flex-col border-[#fecdbb] border-b-[15px] xl:flex-row flex xl:items-center xl:justify-around">
@@ -403,7 +416,10 @@
                       </div>
                       <img class="h-[7rem] xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
                       <div class="barang__text space-y-3 xl:space-y-3">
-                          <p>Nama Produk</p>
+                          <p data-translatable>
+                            <span>Nama Produk</span>
+                            <span>Product Name</span>
+                          </p>
                           <input class="w-full xl:w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
                       </div>
                     </div>
@@ -446,7 +462,10 @@
                       </div>
                       <img class="h-[7rem] xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
                       <div class="barang__text space-y-3 xl:space-y-3">
-                          <p>Nama Produk</p>
+                        <p data-translatable>
+                          <span>Nama Produk</span>
+                          <span>Product Name</span>
+                        </p>
                           <input class="w-full xl:w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
                       </div>
                     </div>
@@ -489,7 +508,10 @@
                       </div>
                       <img class="h-[7rem] xl:h-[10rem]" src="./../assets/search/img.jpg" alt="" srcset="">
                       <div class="barang__text space-y-3 xl:space-y-3">
-                          <p>Nama Produk</p>
+                        <p data-translatable>
+                          <span>Nama Produk</span>
+                          <span>Product Name</span>
+                        </p>
                           <input class="w-full xl:w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Tulis catatan disini">
                       </div>
                     </div>
@@ -530,9 +552,18 @@
             <div class="flex items-center xl:text-[20px]">
                 <input class=" w-[8rem] xl:w-[16rem] rounded-t-lg" type="text" name="" id="" placeholder="Gunakan kode promo">
             </div>
-            <button type="submit" class="hidden xl:block xl:px-2 xl:py-2 transition-all ease-in-out  rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white">Hapus Produk Kosong</button>
-            <p class="font-bold mt-3 sm:mt-0 sm:order-2">Total <span>36</span> produk</p>
-            <button type="submit" class="block sm:order-1 xl:hidden xl:px-2 xl:py-2 transition-all ease-in-out  rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white">Hapus Produk Kosong</button>
+            <button type="submit" class="hidden xl:block xl:px-2 xl:py-2 transition-all ease-in-out  rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white" data-translatable>
+              <span>Hapus Produk Kosong</span>
+              <span>Delete Empty Product</span>
+            </button>
+            <p class="font-bold mt-3 sm:mt-0 sm:order-2" data-translatable>
+              <span>Total 36 produk</span>
+              <span>Total 36 products</span>
+            </p>
+            <button type="submit" class="block sm:order-1 xl:hidden xl:px-2 xl:py-2 transition-all ease-in-out  rounded-2xl border-2 xl:text-[20px] border-transparent hover:border-red-600 hover:text-white" data-translatable>
+              <span>Hapus Produk Kosong</span>
+              <span>Delete Empty Product</span>
+            </button>
            <div class="footer-total space-y-2 mt-5 xl:mt-0 sm:order-3 xl:space-y-3">
                <p>Rp. 156.000.000.000,-</p>
                <button class="bg-red-600 text-white w-full rounded-full py-1 xl:py-1" type="submit">checkout</button>
@@ -552,12 +583,22 @@
               </button>
               <div class="p-6 text-center">
                   <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  <h3 class="mb-5 text-[20px] font-bold text-red-600">Yakin Ingin menghapus keranjang?</h3>
-                  <h3 class="mb-3 text-left text-[14px] font-bold ml-[1.5rem] text-black">Nama Produk</h3>
-                  <button data-modal-toggle="popup-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 w-[6rem] focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-full text-sm px-5 py-2.5 mr-2">
-                      Ya
+                  <h3 class="mb-5 text-[20px] font-bold text-red-600" data-translatable>
+                    <span>Yakin Ingin menghapus keranjang?</span>
+                    <span>Sure want to delete the cart?</span>
+                  </h3>
+                  <h3 class="mb-3 text-left text-[14px] font-bold ml-[1.5rem] text-black" data-translatable>
+                    <span>Nama Produk</span>
+                    <span>Product Name</span>
+                  </h3>
+                  <button data-modal-toggle="popup-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 w-[6rem] focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-full text-sm px-5 py-2.5 mr-2" data-translatable>
+                      <span>Ya</span>
+                      <span>Yes</span>
                   </button>
-                  <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-full border border-gray-200 text-sm font-medium w-[6rem] px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Tidak</button>
+                  <button data-modal-toggle="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-full border border-gray-200 text-sm font-medium w-[6rem] px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600" data-translatable>
+                    <span>Tidak</span>
+                    <span>No</span>
+                  </button>
               </div>
           </div>
       </div>
@@ -580,13 +621,7 @@
               srcset=""
             />
             <h6 class="font-normal xl:ml-5" data-translatable>
-              <span
-                >Burnerindo.com is an e-commerce service created and managed by
-                PT. Burnerindo Teknik Utama, as one of the online marketing
-                strategy to make it easier for customers / members make a
-                purchase of PT. Main Engineering Burnerindo with effective and
-                efficient</span
-              >
+              
               <span
                 >Burnerindo.com adalah sebuah layanan e-commerce yang dibuat dan
                 dikelola oleh PT. Burnerindo Teknik Utama, sebagai salah satu
@@ -594,27 +629,34 @@
                 melakukan pembelian produk PT. Burnerindo Teknik Utama dengan
                 efektif dan efisien</span
               >
+              <span
+                >Burnerindo.com is an e-commerce service created and managed by
+                PT. Burnerindo Teknik Utama, as one of the online marketing
+                strategy to make it easier for customers / members make a
+                purchase of PT. Main Engineering Burnerindo with effective and
+                efficient</span
+              >
             </h6>
           </div>
           <div
             class="footer-menu mt-7 flex w-full flex-wrap space-x-5 space-y-5 xl:mt-0 xl:justify-around xl:space-x-0 xl:space-y-0"
           >
             <h6 class="mt-5 text-black xl:mt-0" data-translatable>
-              <span>TERMS OF USE</span>
               <span>SYARAT PENGGUNAAN</span>
+              <span>TERMS OF USE</span>
             </h6>
             <div class="footer-tentangKami">
               <h6 class="text-black" data-translatable>
-                <span>ABOUT US</span>
                 <span>TENTANG KAMI</span>
+                <span>ABOUT US</span>
               </h6>
               <p data-translatable>
-                <span>ABOUT US</span>
                 <span>TENTANG KAMI</span>
+                <span>ABOUT US</span>
               </p>
               <p data-translatable>
-                <span>WHY US</span>
                 <span>MENGAPA KAMI</span>
+                <span>WHY US</span>
               </p>
             </div>
             <h6 class="text-black" data-translatable>
@@ -622,15 +664,15 @@
               <span>FAQ</span>
             </h6>
             <h6 class="text-black" data-translatable>
-              <span>TERMS AND CONDITIONS</span>
               <span>SYARAT DAN KETENTUAN</span>
+              <span>TERMS AND CONDITIONS</span>
             </h6>
           </div>
         </div>
         <div class="subscribe mt-16 flex flex-col space-y-3 self-baseline">
           <h6 class="font-bold text-gray-600" data-translatable>
-            <span>FIND US</span>
             <span>TEMUKAN KAMI</span>
+            <span>FIND US</span>
           </h6>
           <div class="icon-menu">
             <button
@@ -678,13 +720,14 @@
           </div>
           <div class="footer-location font-normal text-black">
             <p data-translatable>
-              <span
-                >Lindeteves Trade Center Lt. GF2 Block C27 No. 9 Jl. Hayam Wuruk
-                No. 127 Greater Jakarta, Indonesia</span
-              >
+              
               <span
                 >Lindeteves Trade Center Lt. GF2 Blok C27 No. 9 Jl. Hayam Wuruk
                 No. 127 Jakarta Indonesia Raya</span
+              >
+              <span
+                >Lindeteves Trade Center Lt. GF2 Block C27 No. 9 Jl. Hayam Wuruk
+                No. 127 Greater Jakarta, Indonesia</span
               >
             </p>
           </div>
@@ -705,8 +748,8 @@
                   class="mb-5 font-bold text-[#4a4e5a] xl:mb-3"
                   data-translatable
                 >
-                <span>BRAND PARTNER</span>
                 <span>MITRA MEREK</span>
+                <span>BRAND PARTNER</span>
                 </h6>
                 <div
                   class="footer-brand__brand flex flex-col flex-wrap justify-between space-y-5 xl:flex-row xl:space-y-0"
@@ -772,8 +815,8 @@
                   class="mt-5 mb-5 font-bold text-[#4a4e5a] xl:mb-3 xl:mt-0"
                   data-translatable
                 >
-                <span>PAYMENT METHOD</span>
                 <span>METODE PEMBAYARAN</span>
+                <span>PAYMENT METHOD</span>
                 </h6>
                 <div
                   class="payment flex flex-col justify-between space-y-7 xl:flex-row xl:space-y-0 xl:space-x-2"
@@ -1081,9 +1124,9 @@
       var i18n = domI18n({
         selector: "[data-translatable]",
         separator: " // ",
-        languages: [ "en", "id"],
-        defaultLanguage: "en",
-        currentLanguage: "en",
+        languages: ["id", "en"],
+        defaultLanguage: "id",
+        currentLanguage: "id",
       });
 
       let languange = document.querySelectorAll(".language");
