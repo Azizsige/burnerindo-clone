@@ -854,14 +854,30 @@
             <div
               class="purchase-footer bg-gray-500 text-white py-3 xl:py-3 flex flex-wrap justify-around xl:items-center sm:space-x-5 sm:px-3 sm:items-center rounded-b-2xl text-[14px] xl:w-auto xl:justify-flex xl:text-[16px] 2xl:w-auto 2xl:space-y-0"
             >
-              <div class="flex items-center xl:text-[20px]">
+              <div class="flex relative items-center xl:text-[20px]">
                 <input
-                  class="w-[8rem] xl:w-[16rem] rounded-t-lg"
+                  class="w-[8rem] xl:w-[16rem] pr-10 xl:pr-10 text-gray-500 rounded-t-lg"
                   type="text"
                   name=""
                   id=""
                   placeholder="Gunakan kode promo"
                 />
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3"
+                >
+                  <svg
+                    class="h-5 w-5 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
               </div>
               <button
                 type="submit"
